@@ -14,6 +14,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  base: "/guillaume_galland_site/",
+  }
 }));

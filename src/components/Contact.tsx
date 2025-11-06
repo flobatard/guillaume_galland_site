@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { useForm, ValidationError } from '@formspree/react';
+import axios from "axios"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +17,19 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const url = "https://formspree.io/f/movpgdpa"
+    console.log("YO")
+    console.log(formData)
+    axios.post(url, formData)
+      .then(res => 
+      {
+        toast.success("Merci pour votre message ! Nous vous recontacterons très prochainement.");
+        setFormData({ name: "", email: "", phone: "", message: "" })
+      })
+      .catch(err => toast.error("Une erreur est survenue lors de l'envoie du message veuillez réessayer ultérieurement"))
+    
     // Simulate form submission
-    toast.success("Merci pour votre message ! Nous vous recontacterons très prochainement.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -47,10 +59,10 @@ const Contact = () => {
                 <div>
                   <p className="font-serif text-foreground mb-1">Téléphone</p>
                   <a
-                    href="tel:+33123456789"
+                    href="tel:+33627841442"
                     className="text-muted-foreground hover:text-accent transition-colors font-light"
                   >
-                    +33 1 23 45 67 89
+                    +33 6 27 84 14 42
                   </a>
                 </div>
               </div>
@@ -62,25 +74,11 @@ const Contact = () => {
                 <div>
                   <p className="font-serif text-foreground mb-1">Email</p>
                   <a
-                    href="mailto:contact@guillaumegalland.fr"
+                    href="mailto:contact@guillaumegalland.com"
                     className="text-muted-foreground hover:text-accent transition-colors font-light"
                   >
-                    contact@guillaumegalland.fr
+                    contact@guillaumegalland.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-accent/20">
-                  <MapPin className="w-5 h-5 text-accent-foreground" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <p className="font-serif text-foreground mb-1">Adresse</p>
-                  <p className="text-muted-foreground font-light">
-                    15 Avenue de l'Élégance
-                    <br />
-                    75008 Paris, France
-                  </p>
                 </div>
               </div>
             </div>

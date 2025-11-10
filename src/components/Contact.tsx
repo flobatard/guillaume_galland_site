@@ -17,9 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const url = "https://formspree.io/f/movpgdpa"
-    console.log("YO")
-    console.log(formData)
+    const url = "https://formspree.io/f/manaywng"
     axios.post(url, formData)
       .then(res => 
       {

@@ -11,17 +11,25 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
               <p className="text-lg">
-                Avec plus de 15 ans d'expérience dans l'univers du design d'intérieur haut de gamme, 
-                je me consacre à la création d'espaces qui incarnent l'excellence et le raffinement.
+                Fondée en décembre 2025, GALLAND accompagne les acteurs du bâtiment
+                tout au long de leurs projets immobiliers, depuis la sélection du bâtiment
+                jusqu’à sa livraison. Nous intervenons sur l’analyse et le choix du bien, la
+                sélection des partenaires techniques et opérationnels, ainsi que sur le suivi
+                des entreprises en phase travaux et le contrôle final avant réception.
               </p>
               <p className="text-lg">
-                Mon approche se distingue par une attention méticuleuse aux détails, une sélection 
-                rigoureuse de matériaux nobles et une compréhension profonde des besoins de ma clientèle 
-                exigeante.
+                Notre expertise s’appuie sur un réseau qualifié de consultants, de bureaux
+                d’études et de partenaires spécialisés, nous permettant d’adapter nos
+                interventions aux enjeux spécifiques de chaque projet. Nous avons souhaité
+                créer un cadre de travail fidèle à nos valeurs, où la rigueur dans la
+                préparation, l’efficacité dans le pilotage, la qualité des relations humaines et
+                la capacité à se mettre à la place de l’utilisateur final constituent les
+                fondations de notre démarche.
               </p>
               <p className="text-lg">
-                Chaque projet est une opportunité unique de transformer une vision en réalité, en 
-                alliant esthétique intemporelle et fonctionnalité irréprochable.
+                Notre mission est de sécuriser, optimiser et valoriser les
+                projets immobiliers de nos clients, avec exigence,
+                transparence et proximité.
               </p>
               <div className="pt-6">
                 <div className="inline-block">

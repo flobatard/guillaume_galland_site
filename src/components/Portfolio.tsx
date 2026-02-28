@@ -3,31 +3,22 @@ import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 
+import heineken from "@/assets/images/Heineken-Emblema.png"
+import artelia from "@/assets/images/Ils_Nous_Font confiance 2.png"
+
 const portfolioItems = [
   {
     id: 1,
-    image: portfolio1,
-    title: "Salon Contemporain",
-    description: "Design moderne aux accents sophistiqués",
+    image: heineken,
+    title: "Heineken",
+    description: "AMO - Réaménagement du Siège Social de Heineken \nFrance à Rueil-Malmaison 7500m²",
   },
   {
     id: 2,
-    image: portfolio2,
-    title: "Chambre de Prestige",
-    description: "Élégance et sérénité réunies",
-  },
-  {
-    id: 3,
-    image: portfolio3,
-    title: "Cuisine d'Exception",
-    description: "Alliance parfaite de luxe et praticité",
-  },
-  {
-    id: 4,
-    image: portfolio4,
-    title: "Salle de Bain Spa",
-    description: "Oasis de détente et raffinement",
-  },
+    image: artelia,
+    title: "Artelia",
+    description: "OPC – Travaux de Rénovation des postes électriques HTA",
+  }
 ];
 
 const Portfolio = () => {
@@ -36,7 +27,7 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-4">
-            Réalisations
+            ILS NOUS FONT CONFIANCE
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
             Découvrez une sélection de projets qui illustrent notre excellence et notre savoir-faire
@@ -47,20 +38,20 @@ const Portfolio = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-sm shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in"
+              className="group relative rounded-sm hover:shadow-2xl transition-all duration-500 animate-fade-in flex items-end"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="flex items-end overflow-hidden h-100">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-primary-foreground">
                   <h3 className="text-2xl md:text-3xl font-serif mb-2">{item.title}</h3>
-                  <p className="text-sm md:text-base font-light">{item.description}</p>
+                  <p style={{ whiteSpace: 'pre-line' }} className="text-sm md:text-base font-light">{item.description}</p>
                 </div>
               </div>
             </div>

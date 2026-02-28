@@ -32,7 +32,7 @@ const portfolioItems = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section-spacing bg-secondary/30">
+    <section id="portfolio" className="section-spacing bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-4">

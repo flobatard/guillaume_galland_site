@@ -7,36 +7,33 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1 animate-fade-in">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-6">
-              À propos
+              STRUCTURE INDÉPENDANTE
             </h2>
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
               <p className="text-lg">
-                Fondée en décembre 2025, GALLAND accompagne les acteurs du bâtiment
-                tout au long de leurs projets immobiliers, depuis la sélection du bâtiment
-                jusqu’à sa livraison. Nous intervenons sur l’analyse et le choix du bien, la
-                sélection des partenaires techniques et opérationnels, ainsi que sur le suivi
-                des entreprises en phase travaux et le contrôle final avant réception.
+                Fondée en 2025, GALLAND est une structure indépendante spécialisée dans
+                l’accompagnement des acteurs du bâtiment sur des projets immobiliers à
+                forts enjeux.<br />
+
+                Positionnée comme un partenaire de confiance, GALLAND intervient en
+                complément des organisations existantes, avec une approche agile, exigeante et opérationnelle.<br />
+
+                Habituée à évoluer aux côtés de grands acteurs du conseil et de la maîtrise
+                d’ouvrage, GALLAND s’intègre naturellement aux équipes en place, dans le
+                respect des méthodes, outils et standards projet.<br />
+
+                La structure s’appuie sur un réseau qualifié de consultants, bureaux
+                d’études et partenaires spécialisés, garantissant une capacité d’adaptation
+                rapide aux contextes complexes et aux contraintes conjoncturelles du
+                marché immobilier.
               </p>
               <p className="text-lg">
-                Notre expertise s’appuie sur un réseau qualifié de consultants, de bureaux
-                d’études et de partenaires spécialisés, nous permettant d’adapter nos
-                interventions aux enjeux spécifiques de chaque projet. Nous avons souhaité
-                créer un cadre de travail fidèle à nos valeurs, où la rigueur dans la
-                préparation, l’efficacité dans le pilotage, la qualité des relations humaines et
-                la capacité à se mettre à la place de l’utilisateur final constituent les
-                fondations de notre démarche.
+                Les valeurs de rigueur, exigence, efficacité, qualité des relations 
+                humaines et de compréhension des usages constituent le socle de l’engagement de GALLAND.
               </p>
               <p className="text-lg">
-                Notre mission est de sécuriser, optimiser et valoriser les
-                projets immobiliers de nos clients, avec exigence,
-                transparence et proximité.
+                La qualité par l’exigence.
               </p>
-              <div className="pt-6">
-                <div className="inline-block">
-                  <p className="text-2xl font-serif text-foreground mb-1">Guillaume Galland</p>
-                  <p className="text-sm text-accent uppercase tracking-widest">Designer d'Intérieur</p>
-                </div>
-              </div>
             </div>
           </div>
 

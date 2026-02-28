@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-luxury.jpg";
+import heroImage from "@/assets/images/Pres.png"
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
@@ -10,10 +10,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="accueil" className="relative h-screen flex items-center bg-black justify-center overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
+        style={{ 
+          backgroundImage: `url(${heroImage})`,
+          backgroundPosition: 'center bottom',
+          backgroundSize: 'cover',
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/20 to-background/90" />
       </div>
@@ -23,10 +27,10 @@ const Hero = () => {
           GUILLAUME GALLAND
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground/90 mb-8">
-          L'Art de l'Élégance & du Savoir-faire
+          AMO – OPC externalisé
         </p>
         <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto font-light">
-          Créateur d'espaces raffinés où le luxe rencontre la fonctionnalité
+          Tertiaire · Hôtellerie · Retail
         </p>
       </div>
 

@@ -30,7 +30,7 @@ const Portfolio = () => {
             ILS NOUS FONT CONFIANCE
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
-            Découvrez une sélection de projets qui illustrent notre excellence et notre savoir-faire
+            Découvrez une sélection de projets, en cours ou à venir, qui illustrent notre excellence et notre savoir-faire
           </p>
         </div>
 

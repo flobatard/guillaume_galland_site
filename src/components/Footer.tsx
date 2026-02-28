@@ -7,11 +7,14 @@ const Footer = () => {
         <div className="text-center space-y-4">
           <h3 className="text-3xl font-serif font-light">Guillaume Galland</h3>
           <p className="text-primary-foreground/80 font-light">
-            Designer d'Intérieur • Paris, France
+            France
           </p>
           <div className="pt-6 border-t border-primary-foreground/20">
             <p className="text-sm text-primary-foreground/60 font-light">
               © {currentYear} Guillaume Galland. Tous droits réservés.
+            </p>
+            <p className="text-sm text-primary-foreground/40 font-light">
+              Dernière Mise à jour: 01/03/2026
             </p>
           </div>
         </div>

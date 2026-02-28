@@ -5,7 +5,7 @@ const Localisation = () => {
     <section id="localisation" className="section-spacing bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="order-2 lg:order-1 animate-fade-in relative -right-24 lg:-right-30 h-full">
+          <div className="order-2 lg:order-1 animate-fade-in relative md:-top-24 lg:-right-24 h-full">
             <div className="relative">
               <div className="rounded-sm">
                 <img

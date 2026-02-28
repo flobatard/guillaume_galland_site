@@ -1,3 +1,6 @@
+@import "@fontsource/gfs-didot";
+@import "@fontsource/montserrat";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

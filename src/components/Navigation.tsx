@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import logo from "@/assets/mini-logo.png"
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,7 +44,11 @@ const Navigation = () => {
             onClick={() => scrollToSection("accueil")}
             className="text-2xl font-serif font-semibold text-foreground hover:text-accent transition-colors"
           >
-            Guillaume Galland
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-12 w-auto object-contain" // Ajustez la hauteur et la largeur selon vos besoins
+            />
           </button>
 
           {/* Desktop Navigation */}

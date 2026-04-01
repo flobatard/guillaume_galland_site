@@ -3,7 +3,7 @@ import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 
-import heineken from "@/assets/images/Heineken-Emblema.png"
+import heineken from "@/assets/images/heineken_alpha_rogne_padding_5.png"
 import artelia from "@/assets/images/Ils_Nous_Font confiance 2.png"
 
 const portfolioItems = [

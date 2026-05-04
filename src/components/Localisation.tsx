@@ -27,7 +27,7 @@ const Localisation = () => {
                 sur vos projets en Île-de-France.
               </p>
               <p className="text-lg">
-                Originaire du sud-Est, je bénéficie également d’un ancrage dans
+                Originaire du sud-Est, je bénéficie également d’un ancrage
                 local, me permettant de suivre facilement des projets dans cette
                 région et de rester proche des acteurs locaux.
               </p>

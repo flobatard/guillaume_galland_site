@@ -34,9 +34,9 @@ const MentionsLegales = () => {
                 <ul className="space-y-1 pl-4">
                   <li><span className="text-foreground">Nom&nbsp;:</span> Guillaume Galland</li>
                   <li><span className="text-foreground">Statut juridique&nbsp;:</span> Micro-entreprise</li>
-                  <li><span className="text-foreground">Adresse du siège&nbsp;:</span> [adresse à compléter]</li>
+                  <li><span className="text-foreground">Adresse du siège&nbsp;:</span> 48 rue de malte, Paris</li>
                   <li><span className="text-foreground">SIRET&nbsp;:</span> 92745621000016</li>
-                  <li><span className="text-foreground">Code APE&nbsp;:</span> [code APE à compléter]</li>
+                  <li><span className="text-foreground">Code APE&nbsp;:</span> 7112b</li>
                   <li>
                     <span className="text-foreground">Téléphone&nbsp;:</span>{" "}
                     <a href="tel:+33627841442" className="hover:text-accent transition-colors">

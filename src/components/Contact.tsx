@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -127,6 +128,25 @@ const Contact = () => {
                   className="bg-card border-border resize-none"
                 />
               </div>
+              <p className="text-xs text-muted-foreground font-light leading-relaxed">
+                Vos données sont collectées par Guillaume Galland pour répondre à votre demande
+                et conservées le temps nécessaire à son traitement. Vous disposez d'un droit
+                d'accès, de rectification, de suppression et d'opposition en écrivant à{" "}
+                <a
+                  href="mailto:contact@guillaumegalland.com"
+                  className="underline underline-offset-2 hover:text-accent transition-colors"
+                >
+                  contact@guillaumegalland.com
+                </a>
+                . Pour en savoir plus, consultez nos{" "}
+                <Link
+                  to="/mentions-legales"
+                  className="underline underline-offset-2 hover:text-accent transition-colors"
+                >
+                  mentions légales
+                </Link>
+                .
+              </p>
               <Button
                 type="submit"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors h-12 text-base font-light"

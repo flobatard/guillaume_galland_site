@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -9,7 +11,15 @@ const Footer = () => {
           <p className="text-primary-foreground/80 font-light">
             France
           </p>
-          <div className="pt-6 border-t border-primary-foreground/20">
+          <div className="pt-6 border-t border-primary-foreground/20 space-y-2">
+            <p>
+              <Link
+                to="/mentions-legales"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground font-light underline underline-offset-4 transition-colors"
+              >
+                Mentions Légales
+              </Link>
+            </p>
             <p className="text-sm text-primary-foreground/60 font-light">
               © {currentYear} Guillaume Galland. Tous droits réservés.
             </p>

@@ -27,7 +27,7 @@ const Hero = () => {
           GUILLAUME GALLAND
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground/90 mb-8">
-          AMO – OPC indépendant
+          AMO et conseil en immobilier d’entreprise
         </p>
         <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto font-light">
           Tertiaire · Hôtellerie · Retail

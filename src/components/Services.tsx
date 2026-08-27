@@ -20,7 +20,7 @@ const services = [
   },
   {
     icon: Planning,
-    title: "Suivi & Pilotage Travaux - OPC",
+    title: "Suivi de la phase travaux",
     description: `J’interviens opérationnellement aux côtés de vos équipes pour suivre les entreprises et coordonner les lots techniques. 
     Je soutiens le pilotage du planning et la maîtrise des coûts, et j’aide à identifier et résoudre les points sensibles tout en respectant votre organisation.`,
   },

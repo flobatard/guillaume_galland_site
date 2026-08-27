@@ -42,7 +42,7 @@ const About = () => {
               <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
                 <img
                   src={portraitImage}
-                  alt="Guillaume Galland, AMO – OPC indépendant"
+                  alt="Guillaume Galland, fondateur de Galland"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

@@ -10,7 +10,7 @@ const Localisation = () => {
               <div className="rounded-sm">
                 <img
                   src={localisationImage}
-                  alt="Guillaume Galland, AMO – OPC indépendant"
+                  alt="Guillaume Galland, fondateur de Galland"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

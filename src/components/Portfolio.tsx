@@ -17,7 +17,7 @@ const portfolioItems = [
     id: 2,
     image: artelia,
     title: "Artelia",
-    description: "OPC – Travaux de Rénovation des postes électriques HTA",
+    description: "Suivi de la phase travaux – Rénovation des postes électriques HTA",
   }
 ];
 

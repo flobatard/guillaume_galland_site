@@ -1,49 +1,37 @@
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio2 from "@/assets/portfolio-2.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
-
-import heineken from "@/assets/images/heineken_alpha_rogne_padding_5.png"
-import artelia from "@/assets/images/Ils_Nous_Font confiance 2.png"
-
-const portfolioItems = [
-  {
-    id: 1,
-    image: heineken,
-    title: "Heineken",
-    description: "AMO - Réaménagement du Siège Social de Heineken \nFrance à Rueil-Malmaison 7500m²",
-  },
-  {
-    id: 2,
-    image: artelia,
-    title: "Artelia",
-    description: "Suivi de la phase travaux – Rénovation des postes électriques HTA",
-  }
-];
+import { useTranslation } from "react-i18next";
+import { useLocalizedImage } from "@/i18n/localizedAssets";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+  const items = t("portfolio.items", { returnObjects: true });
+  // Même ordre que les entrées de portfolio.items dans fr.ts / en.ts.
+  const itemImages = [
+    useLocalizedImage("portfolioHeineken"),
+    useLocalizedImage("portfolioArtelia"),
+  ];
+
   return (
     <section id="portfolio" className="section-spacing bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-4">
-            ILS NOUS FONT CONFIANCE
+            {t("portfolio.title")}
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
-            Découvrez une sélection de projets, en cours ou à venir, qui illustrent notre excellence et notre savoir-faire
+            {t("portfolio.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {portfolioItems.map((item, index) => (
+          {items.map((item, index) => (
             <div
-              key={item.id}
+              key={index}
               className="group relative rounded-sm hover:shadow-2xl transition-all duration-500 animate-fade-in flex items-end"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-end overflow-hidden h-100">
                 <img
-                  src={item.image}
+                  src={itemImages[index]}
                   alt={item.title}
                   className="w-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />

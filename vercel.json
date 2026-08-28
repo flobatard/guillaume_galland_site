@@ -8,6 +8,16 @@
       "has": [{ "type": "host", "value": "www.guillaumegalland.com" }],
       "destination": "https://guillaumegalland.com/:path*",
       "statusCode": 301
+    },
+    {
+      "source": "/",
+      "destination": "/fr",
+      "statusCode": 301
+    },
+    {
+      "source": "/mentions-legales",
+      "destination": "/fr/mentions-legales",
+      "statusCode": 301
     }
   ],
   "headers": [

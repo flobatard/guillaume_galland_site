@@ -1,7 +1,11 @@
-import heroImage from "@/assets/images/Pres.png"
+import { useTranslation } from "react-i18next";
 import { ArrowDown } from "lucide-react";
+import { useLocalizedImage } from "@/i18n/localizedAssets";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  const heroImage = useLocalizedImage("hero");
+
   const scrollToAbout = () => {
     const element = document.getElementById("apropos");
     if (element) {
@@ -13,7 +17,7 @@ const Hero = () => {
     <section id="accueil" className="relative h-screen flex items-center bg-black justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
-        style={{ 
+        style={{
           backgroundImage: `url(${heroImage})`,
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
@@ -27,17 +31,17 @@ const Hero = () => {
           GUILLAUME GALLAND
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground/90 mb-8">
-          AMO et conseil en immobilier d’entreprise
+          {t("hero.baseline")}
         </p>
         <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto font-light">
-          Tertiaire · Hôtellerie · Retail
+          {t("hero.sectors")}
         </p>
       </div>
 
       <button
         onClick={scrollToAbout}
         className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-primary-foreground/60 hover:text-primary-foreground transition-all animate-bounce"
-        aria-label="Scroll to about section"
+        aria-label={t("hero.scrollAria")}
       >
         <ArrowDown size={32} />
       </button>

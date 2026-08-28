@@ -16,6 +16,10 @@
 
     /* Linting */
     "strict": false,
+    /* Requis par le typage des clés i18next (CustomTypeOptions) : sans
+       strictNullChecks, `undefined extends string` est vrai et toutes les
+       clés de t() se résolvent en `never`. */
+    "strictNullChecks": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitAny": false,

@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Trans, useTranslation } from "react-i18next";
+import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { useForm, ValidationError } from '@formspree/react';
 import axios from "axios"
+import { localizedPaths } from "@/i18n/routes";
+import type { Lang } from "@/i18n";
 
 const Contact = () => {
+  const { t, i18n } = useTranslation();
+  const legalPath = localizedPaths.legal[i18n.language as Lang];
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,15 +24,12 @@ const Contact = () => {
     e.preventDefault();
     const url = "https://formspree.io/f/manaywng"
     axios.post(url, formData)
-      .then(res => 
+      .then(() =>
       {
-        toast.success("Merci pour votre message ! Nous vous recontacterons très prochainement.");
+        toast.success(t("contact.toastSuccess"));
         setFormData({ name: "", email: "", phone: "", message: "" })
       })
-      .catch(err => toast.error("Une erreur est survenue lors de l'envoie du message veuillez réessayer ultérieurement"))
-    
-    // Simulate form submission
-    
+      .catch(() => toast.error(t("contact.toastError")))
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,23 +41,23 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-4">
-            Contact
+            {t("contact.title")}
           </h2>
           <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
-            Discutons de votre projet et donnons vie ensemble à vos ambitions
+            {t("contact.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 max-w-6xl mx-auto">
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-serif mb-8 text-foreground">Prenons Contact</h3>
+            <h3 className="text-2xl font-serif mb-8 text-foreground">{t("contact.getInTouch")}</h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-accent/20">
                   <Phone className="w-5 h-5 text-accent-foreground" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <p className="font-serif text-foreground mb-1">Téléphone</p>
+                  <p className="font-serif text-foreground mb-1">{t("contact.phoneLabel")}</p>
                   <a
                     href="tel:+33627841442"
                     className="text-muted-foreground hover:text-accent transition-colors font-light"
@@ -71,7 +72,7 @@ const Contact = () => {
                   <Mail className="w-5 h-5 text-accent-foreground" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <p className="font-serif text-foreground mb-1">Email</p>
+                  <p className="font-serif text-foreground mb-1">{t("contact.emailLabel")}</p>
                   <a
                     href="mailto:contact@guillaumegalland.com"
                     className="text-muted-foreground hover:text-accent transition-colors font-light"
@@ -89,7 +90,7 @@ const Contact = () => {
                 <Input
                   type="text"
                   name="name"
-                  placeholder="Votre nom"
+                  placeholder={t("contact.placeholders.name")}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -100,7 +101,7 @@ const Contact = () => {
                 <Input
                   type="email"
                   name="email"
-                  placeholder="Votre email"
+                  placeholder={t("contact.placeholders.email")}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -111,7 +112,7 @@ const Contact = () => {
                 <Input
                   type="tel"
                   name="phone"
-                  placeholder="Votre téléphone"
+                  placeholder={t("contact.placeholders.phone")}
                   value={formData.phone}
                   onChange={handleChange}
                   className="bg-card border-border"
@@ -120,7 +121,7 @@ const Contact = () => {
               <div>
                 <Textarea
                   name="message"
-                  placeholder="Parlez-nous de votre projet..."
+                  placeholder={t("contact.placeholders.message")}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -129,29 +130,29 @@ const Contact = () => {
                 />
               </div>
               <p className="text-xs text-muted-foreground font-light leading-relaxed">
-                Vos données sont collectées par Guillaume Galland pour répondre à votre demande
-                et conservées le temps nécessaire à son traitement. Vous disposez d'un droit
-                d'accès, de rectification, de suppression et d'opposition en écrivant à{" "}
-                <a
-                  href="mailto:contact@guillaumegalland.com"
-                  className="underline underline-offset-2 hover:text-accent transition-colors"
-                >
-                  contact@guillaumegalland.com
-                </a>
-                . Pour en savoir plus, consultez nos{" "}
-                <Link
-                  to="/mentions-legales"
-                  className="underline underline-offset-2 hover:text-accent transition-colors"
-                >
-                  mentions légales
-                </Link>
-                .
+                <Trans
+                  i18nKey="contact.rgpd"
+                  components={{
+                    mailLink: (
+                      <a
+                        href="mailto:contact@guillaumegalland.com"
+                        className="underline underline-offset-2 hover:text-accent transition-colors"
+                      />
+                    ),
+                    legalLink: (
+                      <Link
+                        to={legalPath}
+                        className="underline underline-offset-2 hover:text-accent transition-colors"
+                      />
+                    ),
+                  }}
+                />
               </p>
               <Button
                 type="submit"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors h-12 text-base font-light"
               >
-                Envoyer le message
+                {t("contact.submit")}
               </Button>
             </form>
           </div>

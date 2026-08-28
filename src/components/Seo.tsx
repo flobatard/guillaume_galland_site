@@ -1,4 +1,7 @@
 import { Head } from "vite-react-ssg";
+import type { TFunction } from "i18next";
+import type { Lang } from "@/i18n";
+import { localizedPaths } from "@/i18n/routes";
 
 /**
  * Métadonnées par route.
@@ -14,17 +17,35 @@ import { Head } from "vite-react-ssg";
 
 const ORIGIN = "https://guillaumegalland.com";
 
+const OG_LOCALES: Record<Lang, string> = { fr: "fr_FR", en: "en_US" };
+
 type SeoProps = {
   title: string;
   description: string;
-  /** Chemin absolu depuis la racine, ex. "/mentions-legales". */
+  /** Chemin localisé absolu depuis la racine, ex. "/en/legal-notice". */
   path: string;
+  /** Langue de la page — pilote og:locale et og:locale:alternate. */
+  lang?: Lang;
+  /**
+   * Chemins équivalents dans chaque langue. Émet les <link hreflang>
+   * fr / en / x-default (x-default → FR, cohérent avec le 301 « / → /fr »).
+   */
+  alternates?: { fr: string; en: string };
   noindex?: boolean;
   jsonLd?: Record<string, unknown>;
 };
 
-export function Seo({ title, description, path, noindex, jsonLd }: SeoProps) {
+export function Seo({
+  title,
+  description,
+  path,
+  lang = "fr",
+  alternates,
+  noindex,
+  jsonLd,
+}: SeoProps) {
   const url = new URL(path, ORIGIN).toString();
+  const otherLang: Lang = lang === "fr" ? "en" : "fr";
 
   return (
     <Head>
@@ -33,6 +54,30 @@ export function Seo({ title, description, path, noindex, jsonLd }: SeoProps) {
       <meta name="author" content="Guillaume Galland" />
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex,follow" />}
+
+      {/* Pas de fragment <>…</> ici : Head (react-helmet-async) n'accepte
+          que des balises head directes comme enfants. */}
+      {alternates && (
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href={new URL(alternates.fr, ORIGIN).toString()}
+        />
+      )}
+      {alternates && (
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href={new URL(alternates.en, ORIGIN).toString()}
+        />
+      )}
+      {alternates && (
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={new URL(alternates.fr, ORIGIN).toString()}
+        />
+      )}
 
       {/* Open Graph.
           TODO_GUILLAUME: og-image — og:image et twitter:image restent absentes
@@ -43,7 +88,10 @@ export function Seo({ title, description, path, noindex, jsonLd }: SeoProps) {
           ci-dessous et celui de la Twitter Card. */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Galland" />
-      <meta property="og:locale" content="fr_FR" />
+      <meta property="og:locale" content={OG_LOCALES[lang]} />
+      {alternates && (
+        <meta property="og:locale:alternate" content={OG_LOCALES[otherLang]} />
+      )}
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -74,32 +122,16 @@ export function Seo({ title, description, path, noindex, jsonLd }: SeoProps) {
   );
 }
 
-/** Métadonnées de la page d'accueil, partagées avec le JSON-LD. */
-export const homeSeo = {
-  title: "Galland, AMO et conseil en immobilier d'entreprise",
-  description:
-    "AMO et conseil en immobilier d'entreprise. Nous accompagnons les maîtres d'ouvrage sur des projets tertiaires, hôteliers et retail, en France et en Europe, du cadrage à la livraison.",
-  path: "/",
-} as const;
-
-export const homeJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Guillaume Galland",
-  jobTitle: "Fondateur, AMO et conseil en immobilier d'entreprise",
-  description:
-    "Assistance à maîtrise d'ouvrage et conseil en immobilier d'entreprise, projets tertiaires, hôteliers et retail.",
-  url: `${ORIGIN}/`,
-  email: "contact@guillaumegalland.com",
-  knowsAbout: [
-    "AMO",
-    "Tertiaire",
-    "Hôtellerie",
-    "Retail",
-    "Copropriété",
-    "Due diligence technique",
-    "Data center",
-    "Gestion de projet",
-    "Construction",
-  ],
-};
+/** JSON-LD Person de la page d'accueil, dans la langue de la page. */
+export function buildHomeJsonLd(t: TFunction, lang: Lang) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Guillaume Galland",
+    jobTitle: t("seo.jsonLd.jobTitle"),
+    description: t("seo.jsonLd.description"),
+    url: `${ORIGIN}${localizedPaths.home[lang]}`,
+    email: "contact@guillaumegalland.com",
+    knowsAbout: t("seo.jsonLd.knowsAbout", { returnObjects: true }),
+  };
+}

@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { localizedPaths } from "@/i18n/routes";
+import type { Lang } from "@/i18n";
 
 import logo from "@/assets/mini-logo.png"
 
@@ -10,6 +14,8 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const homePath = localizedPaths.home[i18n.language as Lang];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +27,8 @@ const Navigation = () => {
 
   const scrollToSection = (id: string) => {
     setIsMobileMenuOpen(false);
-    if (location.pathname !== "/") {
-      navigate(`/#${id}`);
+    if (location.pathname !== homePath) {
+      navigate(`${homePath}#${id}`);
       return;
     }
     const element = document.getElementById(id);
@@ -31,13 +37,14 @@ const Navigation = () => {
     }
   };
 
+  // Les id d'ancres sont invariants entre langues ; seuls les labels changent.
   const navLinks = [
-    { id: "accueil", label: "Accueil" },
-    { id: "apropos", label: "À propos" },
-    { id: "services", label: "Services" },
-    { id: "localisation", label: "Localisation" },
-    { id: "portfolio", label: "Portfolio" },
-    { id: "contact", label: "Contact" },
+    { id: "accueil", label: t("nav.accueil") },
+    { id: "apropos", label: t("nav.apropos") },
+    { id: "services", label: t("nav.services") },
+    { id: "localisation", label: t("nav.localisation") },
+    { id: "portfolio", label: t("nav.portfolio") },
+    { id: "contact", label: t("nav.contact") },
   ];
 
   return (
@@ -70,17 +77,21 @@ const Navigation = () => {
                 {link.label}
               </button>
             ))}
+            <LanguageSwitcher />
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X /> : <Menu />}
-          </Button>
+          {/* Mobile : sélecteur de langue toujours visible, à côté du burger
+              (pas seulement dans le menu déroulant). */}
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

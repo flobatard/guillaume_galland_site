@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guillaumegalland.com/</loc>
+    <loc>https://guillaumegalland.com/fr</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://guillaumegalland.com/mentions-legales</loc>
+    <loc>https://guillaumegalland.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://guillaumegalland.com/fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://guillaumegalland.com/en/legal-notice</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

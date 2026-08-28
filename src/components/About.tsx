@@ -1,39 +1,30 @@
+import { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import portraitImage from "@/assets/portrait-guillaume.jpg";
 
 const About = () => {
+  const { t } = useTranslation();
+  const intro = t("about.intro", { returnObjects: true });
+
   return (
     <section id="apropos" className="section-spacing bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1 animate-fade-in">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-foreground mb-6">
-              STRUCTURE INDÉPENDANTE
+              {t("about.title")}
             </h2>
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
               <p className="text-lg">
-                Fondée en 2025, GALLAND est une structure indépendante spécialisée dans
-                l’accompagnement des acteurs du bâtiment sur des projets immobiliers à
-                forts enjeux.<br />
-
-                Positionnée comme un partenaire de confiance, GALLAND intervient en
-                complément des organisations existantes, avec une approche agile, exigeante et opérationnelle.<br />
-
-                Habituée à évoluer aux côtés de grands acteurs du conseil et de la maîtrise
-                d’ouvrage, GALLAND s’intègre naturellement aux équipes en place, dans le
-                respect des méthodes, outils et standards projet.<br />
-
-                La structure s’appuie sur un réseau qualifié de consultants, bureaux
-                d’études et partenaires spécialisés, garantissant une capacité d’adaptation
-                rapide aux contextes complexes et aux contraintes conjoncturelles du
-                marché immobilier.
+                {intro.map((line, index) => (
+                  <Fragment key={index}>
+                    {line}
+                    {index < intro.length - 1 && <br />}
+                  </Fragment>
+                ))}
               </p>
-              <p className="text-lg">
-                Les valeurs de rigueur, exigence, efficacité, qualité des relations 
-                humaines et de compréhension des usages constituent le socle de l’engagement de GALLAND.
-              </p>
-              <p className="text-lg">
-                La qualité par l’exigence.
-              </p>
+              <p className="text-lg">{t("about.values")}</p>
+              <p className="text-lg">{t("about.motto")}</p>
             </div>
           </div>
 
@@ -42,7 +33,7 @@ const About = () => {
               <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
                 <img
                   src={portraitImage}
-                  alt="Guillaume Galland, fondateur de Galland"
+                  alt={t("about.portraitAlt")}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Seo } from "@/components/Seo";
 
 const MentionsLegales = () => {
   useEffect(() => {
@@ -10,6 +11,11 @@ const MentionsLegales = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Seo
+        title="Mentions légales — Galland"
+        description="Mentions légales du site guillaumegalland.com : éditeur, hébergement, propriété intellectuelle, données personnelles et cookies."
+        path="/mentions-legales"
+      />
       <Navigation />
       <main className="flex-1 pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">

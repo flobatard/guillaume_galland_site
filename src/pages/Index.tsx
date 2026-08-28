@@ -9,6 +9,7 @@ import Values from "@/components/Values";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Localisation from "@/components/Localisation";
+import { Seo, homeSeo, homeJsonLd } from "@/components/Seo";
 
 const Index = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo {...homeSeo} jsonLd={homeJsonLd} />
       <Navigation />
       <main>
         <Hero />

@@ -21,7 +21,7 @@ const fr = {
     scrollAria: "Faire défiler vers la section À propos",
   },
   about: {
-    title: "STRUCTURE INDÉPENDANTE",
+    title: "Une structure indépendante",
     intro: [
       "Fondée en 2025, Galland Group est une structure indépendante spécialisée dans l’accompagnement des maîtres d’ouvrage sur des projets immobiliers à forts enjeux.",
       "Nous intervenons en direction de projet et en conseil, avec un noyau permanent et un réseau de consultants, bureaux d’études et partenaires spécialisés mobilisés selon les besoins de chaque opération.",
@@ -32,9 +32,9 @@ const fr = {
     portraitAlt: "Guillaume Galland, fondateur de Galland Group",
   },
   services: {
-    title: "DE L'IDÉE À LA RÉALISATION",
+    title: "Nos accompagnements",
     subtitle:
-      "Une expertise complète pour donner vie à vos projets les plus ambitieux",
+      "Du cadrage à la livraison, un appui au maître d'ouvrage à chaque étape du projet",
     anyStage:
       "Ponctuellement ou sur toute la durée de l'opération, nous intervenons à n'importe laquelle de ces étapes, selon vos besoins.",
     // Phases de la loi MOP affichées dans le bandeau animé en arrière-plan.
@@ -81,7 +81,7 @@ const fr = {
     },
   },
   localisation: {
-    title: "LOCALISATION",
+    title: "Où nous intervenons",
     p1: "Nous sommes basés à Paris, ce qui nous permet d’intervenir rapidement sur vos projets en Île-de-France.",
     p2: "Originaire du sud-Est, notre équipe bénéficie également d’un ancrage local, nous permettant de suivre facilement des projets dans cette région et de rester proches des acteurs locaux.",
     p3: "Notre organisation nous permet d’être mobilisables sur l’ensemble du territoire français ainsi qu’à l’international — Suisse, Francfort, Varsovie, Amsterdam —, selon les besoins de vos projets. Nous pouvons intervenir de manière flexible :",
@@ -93,9 +93,9 @@ const fr = {
     mapAlt: "Carte des zones d’intervention de Galland Group en France et en Europe",
   },
   portfolio: {
-    title: "ILS NOUS FONT CONFIANCE",
+    title: "Nos références",
     subtitle:
-      "Découvrez une sélection de projets, en cours ou à venir, qui illustrent notre excellence et notre savoir-faire",
+      "Un aperçu des missions sur lesquelles nous intervenons actuellement",
     items: [
       {
         title: "Heineken",
@@ -111,7 +111,7 @@ const fr = {
   },
   contact: {
     title: "Contact",
-    subtitle: "Discutons de votre projet et donnons vie ensemble à vos ambitions",
+    subtitle: "Parlez-nous de votre projet, nous verrons ensemble comment vous accompagner",
     getInTouch: "Prenons Contact",
     emailLabel: "Email",
     placeholders: {

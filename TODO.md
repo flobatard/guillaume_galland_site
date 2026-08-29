@@ -16,15 +16,17 @@ Référence : `brief-site-guillaumegalland-pour-florian.pdf`.
 
 ## Rendu « moins d'IA, plus de tenue » (§2 — l'enjeu principal du brief)
 
-- [ ] Retirer les labels en majuscules espacées utilisés comme titres :
-      « STRUCTURE INDÉPENDANTE », « DE L'IDÉE À LA RÉALISATION »,
-      « ILS NOUS FONT CONFIANCE », « LOCALISATION » (clés `*.title` dans
-      fr.ts/en.ts + rendu dans About/Services/Portfolio/Localisation).
-- [ ] Réécrire les 3 slogans creux (test du brief : « est-ce que Guillaume le
-      dirait à l'oral devant un client ? ») :
-      - `contact.subtitle` « Discutons de votre projet et donnons vie… »
-      - `services.subtitle` « Une expertise complète pour donner vie… »
-      - `portfolio.subtitle` « Découvrez une sélection… excellence et savoir-faire »
+- [x] Retirer les labels en majuscules espacées utilisés comme titres
+      (fait le 29/08/2026 — les majuscules venaient du texte des locales, pas
+      du CSS) : « Une structure indépendante », « Nos accompagnements »,
+      « Nos références », « Où nous intervenons » (+ équivalents en.ts).
+- [x] Réécrire les 3 slogans creux (fait le 29/08/2026) :
+      - `contact.subtitle` → « Parlez-nous de votre projet, nous verrons
+        ensemble comment vous accompagner »
+      - `services.subtitle` → « Du cadrage à la livraison, un appui au maître
+        d'ouvrage à chaque étape du projet »
+      - `portfolio.subtitle` → « Un aperçu des missions sur lesquelles nous
+        intervenons actuellement »
 - [ ] Chaque page se valide **rendue dans un navigateur**, desktop large et
       mobile réel — jamais sur le code seul.
 

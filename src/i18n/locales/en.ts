@@ -23,7 +23,7 @@ const en = {
     scrollAria: "Scroll to about section",
   },
   about: {
-    title: "AN INDEPENDENT FIRM",
+    title: "An independent firm",
     intro: [
       "Founded in 2025, Galland Group is an independent firm specialised in supporting project owners on high-stakes real estate projects.",
       "We act in project management and advisory roles, with a permanent core and a network of consultants, engineering offices and specialised partners mobilised according to the needs of each operation.",
@@ -34,9 +34,9 @@ const en = {
     portraitAlt: "Guillaume Galland, founder of Galland Group",
   },
   services: {
-    title: "FROM IDEA TO DELIVERY",
+    title: "How we support you",
     subtitle:
-      "Comprehensive expertise to bring your most ambitious projects to life",
+      "From initial scoping to handover, support for the project owner at every stage",
     anyStage:
       "Whether for a single phase or the entire project, we can step in at any of these stages, depending on your needs.",
     // RIBA Plan of Work stages, mirroring the French MOP phases (fr.ts).
@@ -82,7 +82,7 @@ const en = {
     },
   },
   localisation: {
-    title: "LOCATION",
+    title: "Where we work",
     p1: "We are based in Paris, which allows us to respond quickly on your projects in the Île-de-France region.",
     p2: "Originally from the South-East of France, our team also has strong local roots there, making it easy to follow projects in that region and stay close to local players.",
     p3: "Our organisation allows us to work anywhere in France as well as internationally — Switzerland, Frankfurt, Warsaw, Amsterdam — depending on the needs of your projects. We can operate flexibly:",
@@ -94,9 +94,9 @@ const en = {
     mapAlt: "Map of Galland Group's areas of operation in France and Europe",
   },
   portfolio: {
-    title: "THEY TRUST US",
+    title: "Our references",
     subtitle:
-      "Discover a selection of current and upcoming projects that illustrate our excellence and know-how",
+      "A look at some of the projects we are currently working on",
     items: [
       {
         title: "Heineken",
@@ -112,7 +112,7 @@ const en = {
   },
   contact: {
     title: "Contact",
-    subtitle: "Let's discuss your project and bring your ambitions to life together",
+    subtitle: "Tell us about your project and we will see together how we can help",
     getInTouch: "Get in Touch",
     emailLabel: "Email",
     placeholders: {

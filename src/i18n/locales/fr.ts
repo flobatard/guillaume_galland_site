@@ -10,7 +10,7 @@ const fr = {
   nav: {
     accueil: "Accueil",
     apropos: "À propos",
-    services: "Services",
+    services: "Accompagnements",
     localisation: "Localisation",
     portfolio: "Portfolio",
     contact: "Contact",

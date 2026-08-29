@@ -12,7 +12,7 @@ const en = {
   nav: {
     accueil: "Home",
     apropos: "About",
-    services: "Services",
+    services: "Advisory",
     localisation: "Location",
     portfolio: "Portfolio",
     contact: "Contact",

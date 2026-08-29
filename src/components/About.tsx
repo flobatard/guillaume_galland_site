@@ -24,8 +24,12 @@ const About = () => {
                 ))}
               </p>
               <p className="text-lg">{t("about.values")}</p>
-              <p className="text-lg">{t("about.motto")}</p>
             </div>
+            <blockquote className="mt-10 border-l-2 border-accent pl-6">
+              <p className="font-serif italic text-2xl md:text-3xl text-foreground leading-snug">
+                {t("about.motto")}
+              </p>
+            </blockquote>
           </div>
 
           <div className="order-1 lg:order-2 animate-fade-in">

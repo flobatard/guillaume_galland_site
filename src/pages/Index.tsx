@@ -42,10 +42,10 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <About />
         <Services />
         <Localisation />
         <Portfolio />
+        <About />
         <Contact />
       </main>
       <Footer />

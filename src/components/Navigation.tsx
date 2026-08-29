@@ -40,10 +40,10 @@ const Navigation = () => {
   // Les id d'ancres sont invariants entre langues ; seuls les labels changent.
   const navLinks = [
     { id: "accueil", label: t("nav.accueil") },
-    { id: "apropos", label: t("nav.apropos") },
     { id: "services", label: t("nav.services") },
     { id: "localisation", label: t("nav.localisation") },
     { id: "portfolio", label: t("nav.portfolio") },
+    { id: "apropos", label: t("nav.apropos") },
     { id: "contact", label: t("nav.contact") },
   ];
 

@@ -1,0 +1,151 @@
+# Workflow Gitea Actions : Build → Push → Deploy via docker compose
+#
+# Variables à configurer dans Gitea (Settings → Actions → Variables) :
+#
+#   REGISTRY       → hostname du registry (ex: registry.vpn.h.fbatard.fr)
+#   IMAGE_NAME     → nom de l'image (ex: admin/guillaume-galland-site)
+#                    (optionnel : défaut = <owner>/<repo> du dépôt)
+#   DEPLOY_HOST    → host cible (ex: app-02.vpn.h.fbatard.fr ou IP mesh)
+#   DEPLOY_USER    → user SSH sur le host cible (ex: deploy)
+#   DEPLOY_PATH    → répertoire de déploiement sur le host cible (ex: guillaume-galland-site)
+#   COMPOSE_FILE   → fichier compose à utiliser (optionnel : défaut = docker-compose.yml)
+#   APP_PORT       → port publié sur le host cible (optionnel : défaut = 4600)
+#
+# Secrets à configurer dans Gitea (Settings → Actions → Secrets) :
+#
+#   REGISTRY_USER → user du registry privé
+#   REGISTRY_PASSWORD → mot de passe du registry privé
+#   PRIVATE_SSH_KEY    → clé privée SSH (format PEM, multiline)
+#   APP_ENV           → contenu du fichier .env de l'application (optionnel)
+
+name: Build, Push and Deploy
+
+on:
+  workflow_dispatch:
+
+env:
+  REGISTRY: ${{ vars.REGISTRY }}
+  IMAGE_NAME: ${{ vars.IMAGE_NAME || github.repository }}
+  DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+  DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+  DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+  COMPOSE_FILE: ${{ vars.COMPOSE_FILE || 'docker-compose.yml' }}
+  APP_PORT: ${{ vars.APP_PORT || '4600' }}
+
+jobs:
+  # ─────────────────────────────────────────────
+  # Job 1 : Build de l'image et push vers le registry
+  # ─────────────────────────────────────────────
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Login to private registry
+        run: |
+          echo "${{ secrets.REGISTRY_PASSWORD }}" | \
+            docker login "${{ env.REGISTRY }}" \
+              --username "${{ secrets.REGISTRY_USER }}" \
+              --password-stdin
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -t "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}" \
+            -t "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" \
+            .
+
+      - name: Push Docker image
+        run: |
+          docker push "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+          docker push "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
+
+      - name: Logout from registry
+        if: always()
+        run: docker logout "${{ env.REGISTRY }}"
+
+  # ─────────────────────────────────────────────
+  # Job 2 : Déploiement sur le host cible via SSH
+  # ─────────────────────────────────────────────
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Le .env sert à la fois à docker compose (interpolation de l'image)
+      # et à l'application (contenu du secret APP_ENV, si défini)
+      - name: Generate .env
+        run: |
+          printf '%s\n' "${{ secrets.APP_ENV }}" > .env
+          {
+            echo "REGISTRY=${{ env.REGISTRY }}"
+            echo "IMAGE_NAME=${{ env.IMAGE_NAME }}"
+            echo "TAG=${{ github.sha }}"
+            echo "APP_PORT=${{ env.APP_PORT }}"
+          } >> .env
+
+      - name: Create deploy directory on target host
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ env.DEPLOY_HOST }}
+          username: ${{ env.DEPLOY_USER }}
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          script: mkdir -p "${{ env.DEPLOY_PATH }}"
+
+      - name: Upload compose file and .env
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ env.DEPLOY_HOST }}
+          username: ${{ env.DEPLOY_USER }}
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          source: "${{ env.COMPOSE_FILE }},.env"
+          target: ${{ env.DEPLOY_PATH }}
+
+      - name: Pull images and restart services
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ env.DEPLOY_HOST }}
+          username: ${{ env.DEPLOY_USER }}
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          script: |
+            set -e
+            cd "${{ env.DEPLOY_PATH }}"
+
+            # Login sur le registry depuis le host cible
+            echo "${{ secrets.REGISTRY_PASSWORD }}" | \
+              docker login "${{ env.REGISTRY }}" \
+                --username "${{ secrets.REGISTRY_USER }}" \
+                --password-stdin
+
+            docker compose -f "${{ env.COMPOSE_FILE }}" pull
+            docker compose -f "${{ env.COMPOSE_FILE }}" up -d --remove-orphans
+
+            docker logout "${{ env.REGISTRY }}"
+
+# ─────────────────────────────────────────────
+# Multi-host : déployer sur plusieurs hosts en parallèle
+# ─────────────────────────────────────────────
+# Remplacer le job "deploy" ci-dessus par une matrice, chaque host
+# étant déclaré dans une variable/secret dédié :
+#
+#   deploy:
+#     runs-on: ubuntu-latest
+#     needs: build-and-push
+#     strategy:
+#       matrix:
+#         include:
+#           - host_secret: DEPLOY_HOST_APP01
+#           - host_secret: DEPLOY_HOST_APP02
+#
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Deploy to ${{ matrix.host_secret }}
+#         uses: appleboy/ssh-action@v1.0.3
+#         with:
+#           host: ${{ secrets[matrix.host_secret] }}
+#           ...

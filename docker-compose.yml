@@ -1,0 +1,10 @@
+# Les variables REGISTRY, IMAGE_NAME et TAG sont injectées via le fichier .env
+# généré par le workflow CI (voir .gitea/workflows/deploy.yaml)
+services:
+  web:
+    image: ${REGISTRY}/${IMAGE_NAME}:${TAG:-latest}
+    container_name: guillaume-galland-site
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${APP_PORT:-4600}:80"

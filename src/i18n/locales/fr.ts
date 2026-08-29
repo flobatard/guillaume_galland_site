@@ -81,13 +81,13 @@ const fr = {
     title: "LOCALISATION",
     p1: "Nous sommes basés à Paris, ce qui nous permet d’intervenir rapidement sur vos projets en Île-de-France.",
     p2: "Originaire du sud-Est, notre équipe bénéficie également d’un ancrage local, nous permettant de suivre facilement des projets dans cette région et de rester proches des acteurs locaux.",
-    p3: "Notre organisation nous permet d’être mobilisables sur l’ensemble du territoire français, selon les besoins de vos projets. Nous pouvons intervenir de manière flexible :",
+    p3: "Notre organisation nous permet d’être mobilisables sur l’ensemble du territoire français ainsi qu’à l’international — Suisse, Francfort, Varsovie, Amsterdam —, selon les besoins de vos projets. Nous pouvons intervenir de manière flexible :",
     bullets: [
       "présence sur site aux moments critiques,",
       "soutien direct à vos équipes dans vos locaux,",
       "intervention ponctuelle à distance pour le suivi et l’analyse des dossiers.",
     ],
-    mapAlt: "Carte des zones d’intervention de Galland Group en France",
+    mapAlt: "Carte des zones d’intervention de Galland Group en France et en Europe",
   },
   portfolio: {
     title: "ILS NOUS FONT CONFIANCE",

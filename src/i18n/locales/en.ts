@@ -82,13 +82,13 @@ const en = {
     title: "LOCATION",
     p1: "We are based in Paris, which allows us to respond quickly on your projects in the Île-de-France region.",
     p2: "Originally from the South-East of France, our team also has strong local roots there, making it easy to follow projects in that region and stay close to local players.",
-    p3: "Our organisation allows us to work anywhere in France, depending on the needs of your projects. We can operate flexibly:",
+    p3: "Our organisation allows us to work anywhere in France as well as internationally — Switzerland, Frankfurt, Warsaw, Amsterdam — depending on the needs of your projects. We can operate flexibly:",
     bullets: [
       "on-site presence at critical moments,",
       "direct support to your teams in your offices,",
       "targeted remote involvement for monitoring and document review.",
     ],
-    mapAlt: "Map of Galland Group's areas of operation in France",
+    mapAlt: "Map of Galland Group's areas of operation in France and Europe",
   },
   portfolio: {
     title: "THEY TRUST US",

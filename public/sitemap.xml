@@ -3,6 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://guillaumegalland.com/fr</loc>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
@@ -11,6 +12,7 @@
   </url>
   <url>
     <loc>https://guillaumegalland.com/en</loc>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
@@ -19,6 +21,7 @@
   </url>
   <url>
     <loc>https://guillaumegalland.com/fr/mentions-legales</loc>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>
@@ -27,6 +30,7 @@
   </url>
   <url>
     <loc>https://guillaumegalland.com/en/legal-notice</loc>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>

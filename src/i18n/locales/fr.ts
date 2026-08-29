@@ -23,13 +23,11 @@ const fr = {
   about: {
     title: "STRUCTURE INDÉPENDANTE",
     intro: [
-      "Fondée en 2025, GALLAND GROUP est une structure indépendante spécialisée dans l’accompagnement des acteurs du bâtiment sur des projets immobiliers à forts enjeux.",
-      "Positionnée comme un partenaire de confiance, GALLAND GROUP intervient en complément des organisations existantes, avec une approche agile, exigeante et opérationnelle.",
-      "Habituée à évoluer aux côtés de grands acteurs du conseil et de la maîtrise d’ouvrage, GALLAND GROUP s’intègre naturellement aux équipes en place, dans le respect des méthodes, outils et standards projet.",
-      "La structure s’appuie sur un réseau qualifié de consultants, bureaux d’études et partenaires spécialisés, garantissant une capacité d’adaptation rapide aux contextes complexes et aux contraintes conjoncturelles du marché immobilier.",
+      "Fondée en 2025, Galland Group est une structure indépendante spécialisée dans l’accompagnement des maîtres d’ouvrage sur des projets immobiliers à forts enjeux.",
+      "Nous intervenons en direction de projet et en conseil, avec un noyau permanent et un réseau de consultants, bureaux d’études et partenaires spécialisés mobilisés selon les besoins de chaque opération.",
     ],
     values:
-      "Les valeurs de rigueur, exigence, efficacité, qualité des relations humaines et de compréhension des usages constituent le socle de l’engagement de GALLAND GROUP.",
+      "Rigueur, exigence, efficacité, qualité des relations humaines et compréhension des usages : c’est le socle de notre engagement.",
     motto: "La qualité par l’exigence.",
     portraitAlt: "Guillaume Galland, fondateur de Galland Group",
   },
@@ -67,7 +65,7 @@ const fr = {
         phase: "EXE",
         title: "Suivi de la phase travaux",
         description:
-          "Nous intervenons opérationnellement aux côtés de vos équipes pour suivre les entreprises et coordonner les lots techniques. Nous soutenons le pilotage du planning et la maîtrise des coûts, et nous aidons à identifier et résoudre les points sensibles tout en respectant votre organisation.",
+          "Nous assistons le maître d’ouvrage pendant l’exécution : lecture du planning et des situations, alerte sur les dérives, arbitrage des modifications et de leurs conséquences en coût et en délai. Nous restons l’interlocuteur du maître d’ouvrage face aux intervenants déjà en place, sans nous substituer à eux.",
       },
       {
         phase: "AOR",
@@ -76,6 +74,11 @@ const fr = {
           "Nous assistons vos équipes lors des opérations préalables à la réception, à la levée des réserves et à la consolidation des documents de fin d’opération. Nous participons également à la mise en service et à la clôture administrative et technique du projet, en garantissant que le travail de vos équipes et des entreprises est correctement finalisé.",
       },
     ],
+    copro: {
+      title: "Copropriété et parties communes",
+      description:
+        "Nous accompagnons les syndicats de copropriétaires et leurs syndics sur le cadrage d’un programme de travaux : définition du périmètre, budget, phasage et calendrier, consultation des entreprises, préparation des votes en assemblée générale. Un interlocuteur unique entre le conseil syndical, le syndic et les entreprises.",
+    },
   },
   localisation: {
     title: "LOCALISATION",
@@ -97,7 +100,7 @@ const fr = {
       {
         title: "Heineken",
         description:
-          "Assistant Maître d'Ouvrage - Réaménagement du Siège Social de Heineken \nFrance à Rueil-Malmaison 7500m²",
+          "Assistant Maître d'Ouvrage - Réaménagement du siège social de Heineken France à Rueil-Malmaison, 7 500 m²",
       },
       {
         title: "Artelia",
@@ -119,6 +122,7 @@ const fr = {
     },
     rgpd: "Vos données sont collectées par Guillaume Galland pour répondre à votre demande et conservées le temps nécessaire à son traitement. Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition en écrivant à <mailLink>contact@guillaumegalland.com</mailLink>. Pour en savoir plus, consultez nos <legalLink>mentions légales</legalLink>.",
     submit: "Envoyer le message",
+    reply72h: "Nous répondons nous-mêmes à chaque demande, sous 72 heures.",
     toastSuccess:
       "Merci pour votre message ! Nous vous recontacterons très prochainement.",
     toastError:
@@ -128,7 +132,7 @@ const fr = {
     country: "France",
     legalLink: "Mentions Légales",
     rights: "Tous droits réservés.",
-    lastUpdated: "Dernière mise à jour : 1 mars 2026",
+    lastUpdated: "Dernière mise à jour : {{date}}",
   },
   legal: {
     seo: {

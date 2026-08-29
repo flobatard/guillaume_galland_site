@@ -139,6 +139,9 @@ const Contact = () => {
               >
                 {t("contact.submit")}
               </Button>
+              <p className="text-sm text-muted-foreground font-light text-center">
+                {t("contact.reply72h")}
+              </p>
             </form>
           </div>
         </div>

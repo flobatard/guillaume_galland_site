@@ -220,6 +220,17 @@ const Services = () => {
         <p className="mt-16 text-center text-sm md:text-base text-muted-foreground font-light tracking-wide max-w-xl mx-auto animate-fade-in">
           {t("services.anyStage")}
         </p>
+
+        {/* Ligne d'offre distincte : la copropriété n'est pas une phase de la
+            frise ci-dessus, elle se présente hors chronologie. */}
+        <div className="mt-20 max-w-2xl mx-auto text-center border-t border-foreground/15 pt-12">
+          <h3 className="text-2xl font-serif mb-4 text-foreground">
+            {t("services.copro.title")}
+          </h3>
+          <p className="text-muted-foreground font-light leading-relaxed">
+            {t("services.copro.description")}
+          </p>
+        </div>
       </div>
     </section>
   );

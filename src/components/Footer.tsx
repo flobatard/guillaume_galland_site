@@ -7,6 +7,13 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   const legalPath = localizedPaths.legal[i18n.language as Lang];
   const currentYear = new Date().getFullYear();
+  // Date de build décomposée en local pour éviter le décalage de fuseau
+  // qu'introduirait new Date("YYYY-MM-DD") (interprétée en UTC).
+  const [y, m, d] = __BUILD_DATE__.split("-").map(Number);
+  const buildDate = new Intl.DateTimeFormat(
+    i18n.language === "fr" ? "fr-FR" : "en-GB",
+    { dateStyle: "long" },
+  ).format(new Date(y, m - 1, d));
 
   return (
     <footer className="bg-primary text-primary-foreground py-12">
@@ -29,7 +36,7 @@ const Footer = () => {
               © {currentYear} Galland Group. {t("footer.rights")}
             </p>
             <p className="text-sm text-primary-foreground/40 font-light">
-              {t("footer.lastUpdated")}
+              {t("footer.lastUpdated", { date: buildDate })}
             </p>
           </div>
         </div>

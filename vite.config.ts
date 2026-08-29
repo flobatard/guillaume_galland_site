@@ -5,6 +5,11 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  define: {
+    // Date de build (YYYY-MM-DD), affichée dans le footer comme date de
+    // dernière mise à jour : toujours exacte, jamais périmée.
+    __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)),
+  },
   server: {
     host: "::",
     port: 8080,

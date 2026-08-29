@@ -25,13 +25,11 @@ const en = {
   about: {
     title: "AN INDEPENDENT FIRM",
     intro: [
-      "Founded in 2025, GALLAND GROUP is an independent firm specialised in supporting construction-industry players on high-stakes real estate projects.",
-      "Positioned as a trusted partner, GALLAND GROUP works alongside existing organisations, with an agile, rigorous and hands-on approach.",
-      "Accustomed to working with leading consulting and project-management firms, GALLAND GROUP integrates naturally into the teams in place, respecting their methods, tools and project standards.",
-      "The firm relies on a qualified network of consultants, engineering offices and specialised partners, ensuring it can adapt quickly to complex situations and to the shifting conditions of the real estate market.",
+      "Founded in 2025, Galland Group is an independent firm specialised in supporting project owners on high-stakes real estate projects.",
+      "We act in project management and advisory roles, with a permanent core and a network of consultants, engineering offices and specialised partners mobilised according to the needs of each operation.",
     ],
     values:
-      "Rigour, high standards, efficiency, the quality of human relationships and a deep understanding of end uses form the foundation of GALLAND GROUP's commitment.",
+      "Rigour, high standards, efficiency, the quality of human relationships and a deep understanding of end uses: this is the foundation of our commitment.",
     motto: "Quality through high standards.",
     portraitAlt: "Guillaume Galland, founder of Galland Group",
   },
@@ -68,7 +66,7 @@ const en = {
         phase: "RIBA 5",
         title: "Construction phase monitoring",
         description:
-          "We work operationally alongside your teams to monitor contractors and coordinate technical work packages. We support schedule management and cost control, and help identify and resolve critical issues while respecting your organisation.",
+          "We assist the project owner throughout execution: reviewing the schedule and progress statements, flagging deviations, arbitrating changes and their cost and time implications. We remain the owner's point of contact with the parties already in place, without substituting for them.",
       },
       {
         phase: "RIBA 6",
@@ -77,6 +75,11 @@ const en = {
           "We assist your teams with pre-handover inspections, clearing punch-list items and consolidating close-out documentation. We also take part in commissioning and in the administrative and technical closure of the project, making sure the work of your teams and contractors is properly finalised.",
       },
     ],
+    copro: {
+      title: "Co-ownership and common areas",
+      description:
+        "We support co-owners' associations and their managing agents in framing a works programme: defining the scope, budget, phasing and schedule, consulting contractors, and preparing the votes for general meetings. A single point of contact between the owners' council, the managing agent and the contractors.",
+    },
   },
   localisation: {
     title: "LOCATION",
@@ -98,7 +101,7 @@ const en = {
       {
         title: "Heineken",
         description:
-          "Owner's PM assistance - Refurbishment of the Heineken \nFrance head office in Rueil-Malmaison, 7,500 sqm",
+          "Owner's PM assistance - Refurbishment of the Heineken France head office in Rueil-Malmaison, 7,500 sqm",
       },
       {
         title: "Artelia",
@@ -120,6 +123,7 @@ const en = {
     },
     rgpd: "Your data is collected by Guillaume Galland in order to answer your request and is kept for as long as necessary to process it. You have the right to access, rectify, delete and object to the processing of your data by writing to <mailLink>contact@guillaumegalland.com</mailLink>. To learn more, see our <legalLink>legal notice</legalLink>.",
     submit: "Send message",
+    reply72h: "We answer every enquiry ourselves, within 72 hours.",
     toastSuccess: "Thank you for your message! We will get back to you very soon.",
     toastError:
       "An error occurred while sending your message. Please try again later.",
@@ -128,7 +132,7 @@ const en = {
     country: "France",
     legalLink: "Legal Notice",
     rights: "All rights reserved.",
-    lastUpdated: "Last updated: 1 March 2026",
+    lastUpdated: "Last updated: {{date}}",
   },
   legal: {
     seo: {

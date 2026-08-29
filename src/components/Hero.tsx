@@ -28,7 +28,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <h1 className="text-5xl md:text-7xl lg:text-7xl font-serif font-light text-primary-foreground mb-6 leading-tight">
-          GUILLAUME GALLAND
+          GALLAND GROUP
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground/90 mb-8">
           {t("hero.baseline")}

@@ -16,22 +16,22 @@ const fr = {
     contact: "Contact",
   },
   hero: {
-    baseline: "AMO et conseil en immobilier d’entreprise",
+    baseline: "Assistant Maître d'Ouvrage et conseil en immobilier d’entreprise",
     sectors: "Tertiaire · Hôtellerie · Retail",
     scrollAria: "Faire défiler vers la section À propos",
   },
   about: {
     title: "STRUCTURE INDÉPENDANTE",
     intro: [
-      "Fondée en 2025, GALLAND est une structure indépendante spécialisée dans l’accompagnement des acteurs du bâtiment sur des projets immobiliers à forts enjeux.",
-      "Positionnée comme un partenaire de confiance, GALLAND intervient en complément des organisations existantes, avec une approche agile, exigeante et opérationnelle.",
-      "Habituée à évoluer aux côtés de grands acteurs du conseil et de la maîtrise d’ouvrage, GALLAND s’intègre naturellement aux équipes en place, dans le respect des méthodes, outils et standards projet.",
+      "Fondée en 2025, GALLAND GROUP est une structure indépendante spécialisée dans l’accompagnement des acteurs du bâtiment sur des projets immobiliers à forts enjeux.",
+      "Positionnée comme un partenaire de confiance, GALLAND GROUP intervient en complément des organisations existantes, avec une approche agile, exigeante et opérationnelle.",
+      "Habituée à évoluer aux côtés de grands acteurs du conseil et de la maîtrise d’ouvrage, GALLAND GROUP s’intègre naturellement aux équipes en place, dans le respect des méthodes, outils et standards projet.",
       "La structure s’appuie sur un réseau qualifié de consultants, bureaux d’études et partenaires spécialisés, garantissant une capacité d’adaptation rapide aux contextes complexes et aux contraintes conjoncturelles du marché immobilier.",
     ],
     values:
-      "Les valeurs de rigueur, exigence, efficacité, qualité des relations humaines et de compréhension des usages constituent le socle de l’engagement de GALLAND.",
+      "Les valeurs de rigueur, exigence, efficacité, qualité des relations humaines et de compréhension des usages constituent le socle de l’engagement de GALLAND GROUP.",
     motto: "La qualité par l’exigence.",
-    portraitAlt: "Guillaume Galland, fondateur de Galland",
+    portraitAlt: "Guillaume Galland, fondateur de Galland Group",
   },
   services: {
     title: "DE L'IDÉE À LA RÉALISATION",
@@ -70,7 +70,7 @@ const fr = {
       "soutien direct à vos équipes dans vos locaux,",
       "intervention ponctuelle à distance pour le suivi et l’analyse des dossiers.",
     ],
-    mapAlt: "Carte des zones d’intervention de Galland en France",
+    mapAlt: "Carte des zones d’intervention de Galland Group en France",
   },
   portfolio: {
     title: "ILS NOUS FONT CONFIANCE",
@@ -80,7 +80,7 @@ const fr = {
       {
         title: "Heineken",
         description:
-          "AMO - Réaménagement du Siège Social de Heineken \nFrance à Rueil-Malmaison 7500m²",
+          "Assistant Maître d'Ouvrage - Réaménagement du Siège Social de Heineken \nFrance à Rueil-Malmaison 7500m²",
       },
       {
         title: "Artelia",
@@ -116,7 +116,7 @@ const fr = {
   },
   legal: {
     seo: {
-      title: "Mentions légales — Galland",
+      title: "Mentions légales — Galland Group",
       description:
         "Mentions légales du site guillaumegalland.com : éditeur, hébergement, propriété intellectuelle, données personnelles et cookies.",
     },
@@ -129,7 +129,7 @@ const fr = {
       rows: [
         { label: "Nom", value: "Guillaume Galland" },
         { label: "Statut juridique", value: "Micro-entreprise" },
-        { label: "Adresse du siège", value: "48 rue de malte, Paris" },
+        { label: "Adresse du siège", value: "48 rue de Malte, 75011, Paris" },
         { label: "SIRET", value: "92745621000016" },
         { label: "Code APE", value: "7112b" },
       ],
@@ -205,16 +205,16 @@ const fr = {
   },
   seo: {
     home: {
-      title: "Galland, AMO et conseil en immobilier d'entreprise",
+      title: "Galland Group, Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise",
       description:
-        "AMO et conseil en immobilier d'entreprise. Nous accompagnons les maîtres d'ouvrage sur des projets tertiaires, hôteliers et retail, en France et en Europe, du cadrage à la livraison.",
+        "Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise. Nous accompagnons les maîtres d'ouvrage sur des projets tertiaires, hôteliers et retail, en France et en Europe, du cadrage à la livraison.",
     },
     jsonLd: {
-      jobTitle: "Fondateur, AMO et conseil en immobilier d'entreprise",
+      jobTitle: "Fondateur, Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise",
       description:
         "Assistance à maîtrise d'ouvrage et conseil en immobilier d'entreprise, projets tertiaires, hôteliers et retail.",
       knowsAbout: [
-        "AMO",
+        "Assistance à maîtrise d'ouvrage",
         "Tertiaire",
         "Hôtellerie",
         "Retail",

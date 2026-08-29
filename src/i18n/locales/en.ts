@@ -25,15 +25,15 @@ const en = {
   about: {
     title: "AN INDEPENDENT FIRM",
     intro: [
-      "Founded in 2025, GALLAND is an independent firm specialised in supporting construction-industry players on high-stakes real estate projects.",
-      "Positioned as a trusted partner, GALLAND works alongside existing organisations, with an agile, rigorous and hands-on approach.",
-      "Accustomed to working with leading consulting and project-management firms, GALLAND integrates naturally into the teams in place, respecting their methods, tools and project standards.",
+      "Founded in 2025, GALLAND GROUP is an independent firm specialised in supporting construction-industry players on high-stakes real estate projects.",
+      "Positioned as a trusted partner, GALLAND GROUP works alongside existing organisations, with an agile, rigorous and hands-on approach.",
+      "Accustomed to working with leading consulting and project-management firms, GALLAND GROUP integrates naturally into the teams in place, respecting their methods, tools and project standards.",
       "The firm relies on a qualified network of consultants, engineering offices and specialised partners, ensuring it can adapt quickly to complex situations and to the shifting conditions of the real estate market.",
     ],
     values:
-      "Rigour, high standards, efficiency, the quality of human relationships and a deep understanding of end uses form the foundation of GALLAND's commitment.",
+      "Rigour, high standards, efficiency, the quality of human relationships and a deep understanding of end uses form the foundation of GALLAND GROUP's commitment.",
     motto: "Quality through high standards.",
-    portraitAlt: "Guillaume Galland, founder of Galland",
+    portraitAlt: "Guillaume Galland, founder of Galland Group",
   },
   services: {
     title: "FROM IDEA TO DELIVERY",
@@ -72,7 +72,7 @@ const en = {
       "direct support to your teams in your offices,",
       "targeted remote involvement for monitoring and document review.",
     ],
-    mapAlt: "Map of Galland's areas of operation in France",
+    mapAlt: "Map of Galland Group's areas of operation in France",
   },
   portfolio: {
     title: "THEY TRUST US",
@@ -117,7 +117,7 @@ const en = {
   },
   legal: {
     seo: {
-      title: "Legal notice — Galland",
+      title: "Legal notice — Galland Group",
       description:
         "Legal notice of guillaumegalland.com: publisher, hosting, intellectual property, personal data and cookies.",
     },
@@ -133,7 +133,7 @@ const en = {
           label: "Legal status",
           value: "Micro-entreprise (French sole proprietorship)",
         },
-        { label: "Registered office", value: "48 rue de Malte, Paris, France" },
+        { label: "Registered office", value: "48 rue de Malte, 75011 Paris, France" },
         { label: "SIRET (French company ID)", value: "92745621000016" },
         { label: "APE code", value: "7112b" },
       ],
@@ -209,9 +209,9 @@ const en = {
   },
   seo: {
     home: {
-      title: "Galland, owner’s PM assistance & corporate real estate consulting",
+      title: "Galland Group, owner’s PM assistance & corporate real estate consulting",
       description:
-        "Owner's project management assistance (AMO) and corporate real estate consulting. We support project owners on office, hospitality and retail projects across France and Europe, from initial scoping to handover.",
+        "Owner's project management assistance and corporate real estate consulting. We support project owners on office, hospitality and retail projects across France and Europe, from initial scoping to handover.",
     },
     jsonLd: {
       jobTitle:

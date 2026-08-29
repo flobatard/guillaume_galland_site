@@ -51,7 +51,7 @@ export function Seo({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="author" content="Guillaume Galland" />
+      <meta name="author" content="Galland Group" />
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex,follow" />}
 
@@ -87,7 +87,7 @@ export function Seo({
           leur heuristique. Dès que l'image est livrée, décommenter le bloc
           ci-dessous et celui de la Twitter Card. */}
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Galland" />
+      <meta property="og:site_name" content="Galland Group" />
       <meta property="og:locale" content={OG_LOCALES[lang]} />
       {alternates && (
         <meta property="og:locale:alternate" content={OG_LOCALES[otherLang]} />
@@ -102,7 +102,7 @@ export function Seo({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Galland — AMO et conseil en immobilier d'entreprise"
+        content="Galland Group — Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise"
       />
       */}
 
@@ -122,16 +122,20 @@ export function Seo({
   );
 }
 
-/** JSON-LD Person de la page d'accueil, dans la langue de la page. */
+/** JSON-LD Organization de la page d'accueil, dans la langue de la page. */
 export function buildHomeJsonLd(t: TFunction, lang: Lang) {
   return {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Guillaume Galland",
-    jobTitle: t("seo.jsonLd.jobTitle"),
+    "@type": "Organization",
+    name: "Galland Group",
     description: t("seo.jsonLd.description"),
     url: `${ORIGIN}${localizedPaths.home[lang]}`,
     email: "contact@guillaumegalland.com",
+    founder: {
+      "@type": "Person",
+      name: "Guillaume Galland",
+      jobTitle: t("seo.jsonLd.jobTitle"),
+    },
     knowsAbout: t("seo.jsonLd.knowsAbout", { returnObjects: true }),
   };
 }

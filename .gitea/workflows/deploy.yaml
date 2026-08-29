@@ -43,6 +43,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Step temporaire de debug : n'affiche que les longueurs, jamais les valeurs
+      - name: Debug secrets
+        env:
+          RU: ${{ secrets.REGISTRY_USER }}
+          RP: ${{ secrets.REGISTRY_PASSWORD }}
+        run: |
+          echo "REGISTRY_USER length: ${#RU}"
+          echo "REGISTRY_PASSWORD length: ${#RP}"
+          echo "REGISTRY: '${{ env.REGISTRY }}'"
+          echo "IMAGE_NAME: '${{ env.IMAGE_NAME }}'"
+
       - name: Login to private registry
         run: |
           echo "${{ secrets.REGISTRY_PASSWORD }}" | \

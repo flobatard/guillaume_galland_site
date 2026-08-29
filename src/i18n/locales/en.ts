@@ -19,7 +19,7 @@ const en = {
   },
   hero: {
     baseline: "Owner’s project management assistance & corporate real estate consulting",
-    sectors: "Offices · Hospitality · Retail",
+    sectors: "Offices · Hospitality · Retail · Co-ownership",
     scrollAria: "Scroll to about section",
   },
   about: {
@@ -75,11 +75,6 @@ const en = {
           "We assist your teams with pre-handover inspections, clearing punch-list items and consolidating close-out documentation. We also take part in commissioning and in the administrative and technical closure of the project, making sure the work of your teams and contractors is properly finalised.",
       },
     ],
-    copro: {
-      title: "Co-ownership and common areas",
-      description:
-        "We support co-owners' associations and their managing agents in framing a works programme: defining the scope, budget, phasing and schedule, consulting contractors, and preparing the votes for general meetings. A single point of contact between the owners' council, the managing agent and the contractors.",
-    },
   },
   localisation: {
     title: "Where we work",

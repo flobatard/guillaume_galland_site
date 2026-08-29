@@ -17,7 +17,7 @@ const fr = {
   },
   hero: {
     baseline: "Assistant Maître d'Ouvrage et conseil en immobilier d’entreprise",
-    sectors: "Tertiaire · Hôtellerie · Retail",
+    sectors: "Tertiaire · Hôtellerie · Retail · Copropriété",
     scrollAria: "Faire défiler vers la section À propos",
   },
   about: {
@@ -74,11 +74,6 @@ const fr = {
           "Nous assistons vos équipes lors des opérations préalables à la réception, à la levée des réserves et à la consolidation des documents de fin d’opération. Nous participons également à la mise en service et à la clôture administrative et technique du projet, en garantissant que le travail de vos équipes et des entreprises est correctement finalisé.",
       },
     ],
-    copro: {
-      title: "Copropriété et parties communes",
-      description:
-        "Nous accompagnons les syndicats de copropriétaires et leurs syndics sur le cadrage d’un programme de travaux : définition du périmètre, budget, phasage et calendrier, consultation des entreprises, préparation des votes en assemblée générale. Un interlocuteur unique entre le conseil syndical, le syndic et les entreprises.",
-    },
   },
   localisation: {
     title: "Où nous intervenons",

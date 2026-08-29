@@ -84,10 +84,35 @@ export default {
             height: "0",
           },
         },
+        // Élément pleine largeur : translateX(100%) le fait traverser
+        // exactement son conteneur (curseur « aujourd'hui » du planning).
+        "slide-x": {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(100%)",
+          },
+        },
+        // Allumage d'une tâche du Gantt au passage du curseur : montée
+        // franche (~0,4 s), maintien pendant la traversée (~14 % du cycle),
+        // extinction rapide (~1 s). Le calage se fait via un animation-delay
+        // négatif par barre.
+        "gantt-lit": {
+          "0%": { opacity: "0" },
+          "1.5%": { opacity: "1" },
+          "14%": { opacity: "1" },
+          "17.5%": { opacity: "0" },
+          "100%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // Même durée que gantt-lit : les deux animations doivent rester
+        // synchronisées (cf. SWEEP_SECONDS dans Services.tsx).
+        "planning-sweep": "slide-x 28s linear infinite",
+        "gantt-lit": "gantt-lit 28s linear infinite",
       },
     },
   },

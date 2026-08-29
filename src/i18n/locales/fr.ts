@@ -37,23 +37,40 @@ const fr = {
     title: "DE L'IDÉE À LA RÉALISATION",
     subtitle:
       "Une expertise complète pour donner vie à vos projets les plus ambitieux",
+    anyStage:
+      "Ponctuellement ou sur toute la durée de l'opération, nous intervenons à n'importe laquelle de ces étapes, selon vos besoins.",
+    // Phases de la loi MOP affichées dans le bandeau animé en arrière-plan.
+    // L'équivalent anglais (en.ts) utilise les stages du RIBA Plan of Work.
+    phases: [
+      { code: "ESQ", label: "Esquisse" },
+      { code: "APS", label: "Avant-projet sommaire" },
+      { code: "APD", label: "Avant-projet définitif" },
+      { code: "PRO", label: "Projet" },
+      { code: "DCE", label: "Consultation des entreprises" },
+      { code: "EXE", label: "Exécution" },
+      { code: "AOR", label: "Réception" },
+    ],
     items: [
       {
+        phase: "ESQ · APS",
         title: "Cadrage & Analyse",
         description:
           "Nous participons à l’analyse des contraintes du site, des objectifs du projet et des hypothèses techniques et économiques. Cette étape permet de définir un cadre clair pour anticiper les risques et sécuriser les décisions dès la phase amont, tout en nous intégrant aux méthodes et standards du client.",
       },
       {
+        phase: "APD · PRO · DCE",
         title: "Appui à la conception technique",
         description:
           "Nous renforçons vos équipes projet en relisant et validant les études techniques et réglementaires. Nous contribuons à la coordination des intervenants techniques et à l’analyse des dossiers de consultation, en nous intégrant à vos processus et pratiques existants.",
       },
       {
+        phase: "EXE",
         title: "Suivi de la phase travaux",
         description:
           "Nous intervenons opérationnellement aux côtés de vos équipes pour suivre les entreprises et coordonner les lots techniques. Nous soutenons le pilotage du planning et la maîtrise des coûts, et nous aidons à identifier et résoudre les points sensibles tout en respectant votre organisation.",
       },
       {
+        phase: "AOR",
         title: "Livraison et clôture de projet",
         description:
           "Nous assistons vos équipes lors des opérations préalables à la réception, à la levée des réserves et à la consolidation des documents de fin d’opération. Nous participons également à la mise en service et à la clôture administrative et technique du projet, en garantissant que le travail de vos équipes et des entreprises est correctement finalisé.",

@@ -39,23 +39,39 @@ const en = {
     title: "FROM IDEA TO DELIVERY",
     subtitle:
       "Comprehensive expertise to bring your most ambitious projects to life",
+    anyStage:
+      "Whether for a single phase or the entire project, we can step in at any of these stages, depending on your needs.",
+    // RIBA Plan of Work stages, mirroring the French MOP phases (fr.ts).
+    phases: [
+      { code: "RIBA 0", label: "Strategic Definition" },
+      { code: "RIBA 1", label: "Preparation & Briefing" },
+      { code: "RIBA 2", label: "Concept Design" },
+      { code: "RIBA 3", label: "Spatial Coordination" },
+      { code: "RIBA 4", label: "Technical Design" },
+      { code: "RIBA 5", label: "Construction" },
+      { code: "RIBA 6", label: "Handover" },
+    ],
     items: [
       {
+        phase: "RIBA 0–2",
         title: "Scoping & Analysis",
         description:
           "We take part in analysing site constraints, project objectives and technical and economic assumptions. This step sets a clear framework to anticipate risks and secure decisions from the earliest stages, while fitting into the client's methods and standards.",
       },
       {
+        phase: "RIBA 3–4",
         title: "Technical design support",
         description:
           "We strengthen your project teams by reviewing and validating technical and regulatory studies. We contribute to coordinating technical stakeholders and analysing tender documents, integrating into your existing processes and practices.",
       },
       {
+        phase: "RIBA 5",
         title: "Construction phase monitoring",
         description:
           "We work operationally alongside your teams to monitor contractors and coordinate technical work packages. We support schedule management and cost control, and help identify and resolve critical issues while respecting your organisation.",
       },
       {
+        phase: "RIBA 6",
         title: "Handover and project close-out",
         description:
           "We assist your teams with pre-handover inspections, clearing punch-list items and consolidating close-out documentation. We also take part in commissioning and in the administrative and technical closure of the project, making sure the work of your teams and contractors is properly finalised.",

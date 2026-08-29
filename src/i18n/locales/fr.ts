@@ -93,7 +93,6 @@ const fr = {
     title: "Contact",
     subtitle: "Discutons de votre projet et donnons vie ensemble à vos ambitions",
     getInTouch: "Prenons Contact",
-    phoneLabel: "Téléphone",
     emailLabel: "Email",
     placeholders: {
       name: "Votre nom",

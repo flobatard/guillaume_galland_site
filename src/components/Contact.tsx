@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Trans, useTranslation } from "react-i18next";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -52,21 +52,6 @@ const Contact = () => {
           <div className="animate-fade-in">
             <h3 className="text-2xl font-serif mb-8 text-foreground">{t("contact.getInTouch")}</h3>
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-accent/20">
-                  <Phone className="w-5 h-5 text-accent-foreground" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <p className="font-serif text-foreground mb-1">{t("contact.phoneLabel")}</p>
-                  <a
-                    href="tel:+33627841442"
-                    className="text-muted-foreground hover:text-accent transition-colors font-light"
-                  >
-                    +33 6 27 84 14 42
-                  </a>
-                </div>
-              </div>
-
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-accent/20">
                   <Mail className="w-5 h-5 text-accent-foreground" strokeWidth={1.5} />

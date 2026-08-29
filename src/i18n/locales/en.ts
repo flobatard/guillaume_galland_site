@@ -95,7 +95,6 @@ const en = {
     title: "Contact",
     subtitle: "Let's discuss your project and bring your ambitions to life together",
     getInTouch: "Get in Touch",
-    phoneLabel: "Phone",
     emailLabel: "Email",
     placeholders: {
       name: "Your name",

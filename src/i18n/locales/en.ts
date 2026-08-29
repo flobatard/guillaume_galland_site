@@ -43,30 +43,30 @@ const en = {
       {
         title: "Scoping & Analysis",
         description:
-          "I take part in analysing site constraints, project objectives and technical and economic assumptions. This step sets a clear framework to anticipate risks and secure decisions from the earliest stages, while fitting into the client's methods and standards.",
+          "We take part in analysing site constraints, project objectives and technical and economic assumptions. This step sets a clear framework to anticipate risks and secure decisions from the earliest stages, while fitting into the client's methods and standards.",
       },
       {
         title: "Technical design support",
         description:
-          "I strengthen your project teams by reviewing and validating technical and regulatory studies. I contribute to coordinating technical stakeholders and analysing tender documents, integrating into your existing processes and practices.",
+          "We strengthen your project teams by reviewing and validating technical and regulatory studies. We contribute to coordinating technical stakeholders and analysing tender documents, integrating into your existing processes and practices.",
       },
       {
         title: "Construction phase monitoring",
         description:
-          "I work operationally alongside your teams to monitor contractors and coordinate technical work packages. I support schedule management and cost control, and help identify and resolve critical issues while respecting your organisation.",
+          "We work operationally alongside your teams to monitor contractors and coordinate technical work packages. We support schedule management and cost control, and help identify and resolve critical issues while respecting your organisation.",
       },
       {
         title: "Handover and project close-out",
         description:
-          "I assist your teams with pre-handover inspections, clearing punch-list items and consolidating close-out documentation. I also take part in commissioning and in the administrative and technical closure of the project, making sure the work of your teams and contractors is properly finalised.",
+          "We assist your teams with pre-handover inspections, clearing punch-list items and consolidating close-out documentation. We also take part in commissioning and in the administrative and technical closure of the project, making sure the work of your teams and contractors is properly finalised.",
       },
     ],
   },
   localisation: {
     title: "LOCATION",
-    p1: "I am based in Paris, which allows me to respond quickly on your projects in the Île-de-France region.",
-    p2: "Originally from the South-East of France, I also have strong local roots there, making it easy to follow projects in that region and stay close to local players.",
-    p3: "My organisation allows me to work anywhere in France, depending on the needs of your projects. I can operate flexibly:",
+    p1: "We are based in Paris, which allows us to respond quickly on your projects in the Île-de-France region.",
+    p2: "Originally from the South-East of France, our team also has strong local roots there, making it easy to follow projects in that region and stay close to local players.",
+    p3: "Our organisation allows us to work anywhere in France, depending on the needs of your projects. We can operate flexibly:",
     bullets: [
       "on-site presence at critical moments,",
       "direct support to your teams in your offices,",

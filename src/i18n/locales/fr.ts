@@ -41,30 +41,30 @@ const fr = {
       {
         title: "Cadrage & Analyse",
         description:
-          "Je participe à l’analyse des contraintes du site, des objectifs du projet et des hypothèses techniques et économiques. Cette étape permet de définir un cadre clair pour anticiper les risques et sécuriser les décisions dès la phase amont, tout en m’intégrant aux méthodes et standards du client.",
+          "Nous participons à l’analyse des contraintes du site, des objectifs du projet et des hypothèses techniques et économiques. Cette étape permet de définir un cadre clair pour anticiper les risques et sécuriser les décisions dès la phase amont, tout en nous intégrant aux méthodes et standards du client.",
       },
       {
         title: "Appui à la conception technique",
         description:
-          "Je renforce vos équipes projet en relisant et validant les études techniques et réglementaires. Je contribue à la coordination des intervenants techniques et à l’analyse des dossiers de consultation, en m’intégrant à vos processus et pratiques existants.",
+          "Nous renforçons vos équipes projet en relisant et validant les études techniques et réglementaires. Nous contribuons à la coordination des intervenants techniques et à l’analyse des dossiers de consultation, en nous intégrant à vos processus et pratiques existants.",
       },
       {
         title: "Suivi de la phase travaux",
         description:
-          "J’interviens opérationnellement aux côtés de vos équipes pour suivre les entreprises et coordonner les lots techniques. Je soutiens le pilotage du planning et la maîtrise des coûts, et j’aide à identifier et résoudre les points sensibles tout en respectant votre organisation.",
+          "Nous intervenons opérationnellement aux côtés de vos équipes pour suivre les entreprises et coordonner les lots techniques. Nous soutenons le pilotage du planning et la maîtrise des coûts, et nous aidons à identifier et résoudre les points sensibles tout en respectant votre organisation.",
       },
       {
         title: "Livraison et clôture de projet",
         description:
-          "J’assiste vos équipes lors des opérations préalables à la réception, à la levée des réserves et à la consolidation des documents de fin d’opération. Je participe également à la mise en service et à la clôture administrative et technique du projet, en garantissant que le travail de vos équipes et des entreprises est correctement finalisé.",
+          "Nous assistons vos équipes lors des opérations préalables à la réception, à la levée des réserves et à la consolidation des documents de fin d’opération. Nous participons également à la mise en service et à la clôture administrative et technique du projet, en garantissant que le travail de vos équipes et des entreprises est correctement finalisé.",
       },
     ],
   },
   localisation: {
     title: "LOCALISATION",
-    p1: "Je suis basé à Paris, ce qui me permet d’intervenir rapidement sur vos projets en Île-de-France.",
-    p2: "Originaire du sud-Est, je bénéficie également d’un ancrage local, me permettant de suivre facilement des projets dans cette région et de rester proche des acteurs locaux.",
-    p3: "Mon organisation me permet d’être mobilisable sur l’ensemble du territoire français, selon les besoins de vos projets. Je peux intervenir de manière flexible :",
+    p1: "Nous sommes basés à Paris, ce qui nous permet d’intervenir rapidement sur vos projets en Île-de-France.",
+    p2: "Originaire du sud-Est, notre équipe bénéficie également d’un ancrage local, nous permettant de suivre facilement des projets dans cette région et de rester proches des acteurs locaux.",
+    p3: "Notre organisation nous permet d’être mobilisables sur l’ensemble du territoire français, selon les besoins de vos projets. Nous pouvons intervenir de manière flexible :",
     bullets: [
       "présence sur site aux moments critiques,",
       "soutien direct à vos équipes dans vos locaux,",

@@ -77,9 +77,9 @@ const fr = {
   },
   localisation: {
     title: "Où nous intervenons",
-    p1: "Nous sommes basés à Paris, ce qui nous permet d’intervenir rapidement sur vos projets en Île-de-France.",
-    p2: "Originaire du sud-Est, notre équipe bénéficie également d’un ancrage local, nous permettant de suivre facilement des projets dans cette région et de rester proches des acteurs locaux.",
-    p3: "Notre organisation nous permet d’être mobilisables sur l’ensemble du territoire français ainsi qu’à l’international — Suisse, Francfort, Varsovie, Amsterdam —, selon les besoins de vos projets. Nous pouvons intervenir de manière flexible :",
+    p1: "Nous nous appuyons sur deux ancrages : Paris, d’où nous intervenons au quotidien sur les projets d’Île-de-France, et le Sud-Est, région dont notre équipe est originaire et où elle reste proche des acteurs locaux.",
+    p2: "Au-delà de ces deux régions, notre organisation nous rend mobilisables partout en France ainsi qu’à l’international — Suisse, Francfort, Varsovie, Amsterdam —, selon les besoins de vos projets.",
+    p3: "Dans tous les cas, nous adaptons notre présence au rythme de l’opération :",
     bullets: [
       "présence sur site aux moments critiques,",
       "soutien direct à vos équipes dans vos locaux,",

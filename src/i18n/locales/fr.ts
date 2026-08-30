@@ -17,7 +17,7 @@ const fr = {
   },
   hero: {
     baseline: "Assistant Maître d'Ouvrage et conseil en immobilier d’entreprise",
-    sectors: "Tertiaire · Hôtellerie · Retail · Copropriété",
+    sectors: "Tertiaire · Hôtellerie · Retail · Copropriété · Data center",
     scrollAria: "Faire défiler vers la section À propos",
   },
   about: {

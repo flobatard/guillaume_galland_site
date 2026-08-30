@@ -19,7 +19,7 @@ const en = {
   },
   hero: {
     baseline: "Owner’s project management assistance & corporate real estate consulting",
-    sectors: "Offices · Hospitality · Retail · Co-ownership",
+    sectors: "Offices · Hospitality · Retail · Co-ownership · Data centres",
     scrollAria: "Scroll to about section",
   },
   about: {

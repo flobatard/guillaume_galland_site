@@ -117,7 +117,7 @@ const fr = {
     },
     rgpd: "Vos données sont collectées par Guillaume Galland pour répondre à votre demande et conservées le temps nécessaire à son traitement. Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition en écrivant à <mailLink>contact@guillaumegalland.com</mailLink>. Pour en savoir plus, consultez nos <legalLink>mentions légales</legalLink>.",
     submit: "Envoyer le message",
-    reply72h: "Nous répondons nous-mêmes à chaque demande, sous 72 heures.",
+    reply72h: "Nous répondons à chaque demande sous 72 heures.",
     toastSuccess:
       "Merci pour votre message ! Nous vous recontacterons très prochainement.",
     toastError:

@@ -7,7 +7,7 @@ const Portfolio = () => {
   // Même ordre que les entrées de portfolio.items dans fr.ts / en.ts.
   const itemImages = [
     useLocalizedImage("portfolioHeineken"),
-    useLocalizedImage("portfolioArtelia"),
+    useLocalizedImage("portfolioLouvre"),
   ];
 
   return (

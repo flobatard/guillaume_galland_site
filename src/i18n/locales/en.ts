@@ -99,9 +99,8 @@ const en = {
           "Owner's PM assistance - Refurbishment of the Heineken France head office in Rueil-Malmaison, 7,500 sqm",
       },
       {
-        title: "Artelia",
-        description:
-          "Construction phase monitoring – Renovation of MV electrical substations",
+        title: "Musée du Louvre",
+        description: "PMO consultant on the owner's side",
       },
     ],
   },

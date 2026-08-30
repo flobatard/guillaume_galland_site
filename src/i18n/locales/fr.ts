@@ -98,9 +98,8 @@ const fr = {
           "Assistant Maître d'Ouvrage - Réaménagement du siège social de Heineken France à Rueil-Malmaison, 7 500 m²",
       },
       {
-        title: "Artelia",
-        description:
-          "Suivi de la phase travaux – Rénovation des postes électriques HTA",
+        title: "Musée du Louvre",
+        description: "Consultant PMO côté maîtrise d'ouvrage",
       },
     ],
   },

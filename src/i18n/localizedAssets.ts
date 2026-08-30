@@ -4,7 +4,7 @@ import type { Lang } from "./index";
 import presFr from "@/assets/images/Pres.png";
 import localisationFr from "@/assets/images/Localisation.svg";
 import heinekenFr from "@/assets/images/heineken_alpha_rogne_padding_5.png";
-import arteliaFr from "@/assets/images/Ils_Nous_Font confiance 2.png";
+import louvreFr from "@/assets/images/louvre_2.jpg";
 
 /**
  * Images dont une variante existe (ou existera) par langue. Imports statiques
@@ -19,7 +19,7 @@ const images = {
   hero: { fr: presFr },
   localisationMap: { fr: localisationFr },
   portfolioHeineken: { fr: heinekenFr },
-  portfolioArtelia: { fr: arteliaFr },
+  portfolioLouvre: { fr: louvreFr },
 } satisfies Record<string, { fr: string; en?: string }>;
 
 export type LocalizedImageKey = keyof typeof images;

@@ -8,11 +8,12 @@ Référence : `brief-site-guillaumegalland-pour-florian.pdf`.
 
 ## Bloquant (§3 du brief)
 
-- [ ] **Carte « Artelia » → « Musée du Louvre, consultant PMO côté maîtrise
-      d'ouvrage »** (§3.3). Sans mention d'Artelia, sans détail technique.
-      ⚠️ Suspendu à la transmission de l'accord écrit du Louvre (point 8.2).
-      Fichiers : `src/i18n/locales/fr.ts` / `en.ts` (portfolio.items[1]),
-      `src/i18n/localizedAssets.ts` (image `Ils_Nous_Font confiance 2.png`).
+- [x] **Carte « Artelia » → « Musée du Louvre, consultant PMO côté maîtrise
+      d'ouvrage »** (§3.3, fait le 30/08/2026). Sans mention d'Artelia, sans
+      détail technique. Visuel : photo de la cour Carrée du Louvre
+      (`src/assets/images/louvre.jpg`, Wikimedia Commons, CC0 — palais
+      historique, pas la pyramide de Pei qui reste protégée).
+      ⚠️ L'accord écrit du Louvre (point 8.2) reste à récupérer côté Guillaume.
 
 ## Rendu « moins d'IA, plus de tenue » (§2 — l'enjeu principal du brief)
 

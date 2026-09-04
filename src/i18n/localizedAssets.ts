@@ -4,7 +4,7 @@ import type { Lang } from "./index";
 import presFr from "@/assets/images/Pres.png";
 import localisationFr from "@/assets/images/Localisation.svg";
 import heinekenFr from "@/assets/images/heineken_alpha_rogne_padding_5.png";
-import louvreFr from "@/assets/images/louvre_2.jpg";
+import louvreFr from "@/assets/images/pyramid-of-louvre-at-night-800.jpg";
 
 /**
  * Images dont une variante existe (ou existera) par langue. Imports statiques

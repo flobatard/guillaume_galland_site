@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { useTranslation } from "react-i18next";
-import portraitImage from "@/assets/portrait-guillaume.jpg";
+import portraitImage from "@/assets/portrait-guillaume-cadre.jpg";
 
 const About = () => {
   const { t } = useTranslation();

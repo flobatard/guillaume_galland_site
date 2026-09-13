@@ -62,4 +62,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://guillaumegalland.com/sitemap.xml
+Sitemap: https://gallandgroupe.com/sitemap.xml

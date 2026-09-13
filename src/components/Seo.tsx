@@ -15,7 +15,7 @@ import { localizedPaths } from "@/i18n/routes";
  * Ne pas ajouter de HelmetProvider : le runtime SSG en fournit déjà un.
  */
 
-const ORIGIN = "https://guillaumegalland.com";
+const ORIGIN = "https://gallandgroupe.com";
 
 const OG_LOCALES: Record<Lang, string> = { fr: "fr_FR", en: "en_US" };
 
@@ -51,7 +51,7 @@ export function Seo({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="author" content="Galland Group" />
+      <meta name="author" content="Galland Groupe" />
       <link rel="canonical" href={url} />
       {noindex && <meta name="robots" content="noindex,follow" />}
 
@@ -87,7 +87,7 @@ export function Seo({
           leur heuristique. Dès que l'image est livrée, décommenter le bloc
           ci-dessous et celui de la Twitter Card. */}
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Galland Group" />
+      <meta property="og:site_name" content="Galland Groupe" />
       <meta property="og:locale" content={OG_LOCALES[lang]} />
       {alternates && (
         <meta property="og:locale:alternate" content={OG_LOCALES[otherLang]} />
@@ -102,7 +102,7 @@ export function Seo({
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Galland Group — Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise"
+        content="Galland Groupe — Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise"
       />
       */}
 
@@ -127,7 +127,7 @@ export function buildHomeJsonLd(t: TFunction, lang: Lang) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Galland Group",
+    name: "Galland Groupe",
     description: t("seo.jsonLd.description"),
     url: `${ORIGIN}${localizedPaths.home[lang]}`,
     email: "contact@guillaumegalland.com",

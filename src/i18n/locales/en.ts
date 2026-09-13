@@ -25,13 +25,13 @@ const en = {
   about: {
     title: "An independent firm",
     intro: [
-      "Founded in 2025, Galland Group is an independent firm specialised in supporting project owners on high-stakes real estate projects.",
+      "Founded in 2025, Galland Groupe is an independent firm specialised in supporting project owners on high-stakes real estate projects.",
       "We act in project management and advisory roles, with a permanent core and a network of consultants, engineering offices and specialised partners mobilised according to the needs of each operation.",
     ],
     values:
       "Rigour, high standards, efficiency, the quality of human relationships and a deep understanding of end uses: this is the foundation of our commitment.",
     motto: "Quality through high standards.",
-    portraitAlt: "Guillaume Galland, founder of Galland Group",
+    portraitAlt: "Guillaume Galland, founder of Galland Groupe",
   },
   services: {
     title: "How we support you",
@@ -86,7 +86,7 @@ const en = {
       "direct support to your teams in your offices,",
       "targeted remote involvement for monitoring and document review.",
     ],
-    mapAlt: "Map of Galland Group's areas of operation in France and Europe",
+    mapAlt: "Map of Galland Groupe's areas of operation in France and Europe",
   },
   portfolio: {
     title: "Our references",
@@ -130,9 +130,9 @@ const en = {
   },
   legal: {
     seo: {
-      title: "Legal notice — Galland Group",
+      title: "Legal notice — Galland Groupe",
       description:
-        "Legal notice of guillaumegalland.com: publisher, hosting, intellectual property, personal data and cookies.",
+        "Legal notice of gallandgroupe.com: publisher, hosting, intellectual property, personal data and cookies.",
     },
     title: "Legal Notice",
     subtitle: "Legal information and privacy policy",
@@ -222,7 +222,7 @@ const en = {
   },
   seo: {
     home: {
-      title: "Galland Group, owner’s PM assistance & corporate real estate consulting",
+      title: "Galland Groupe, owner’s PM assistance & corporate real estate consulting",
       description:
         "Owner's project management assistance and corporate real estate consulting. We support project owners on office, hospitality and retail projects across France and Europe, from initial scoping to handover.",
     },

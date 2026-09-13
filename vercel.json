@@ -5,8 +5,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.guillaumegalland.com" }],
-      "destination": "https://guillaumegalland.com/:path*",
+      "has": [{ "type": "host", "value": "www.gallandgroupe.com" }],
+      "destination": "https://gallandgroupe.com/:path*",
       "statusCode": 301
     },
     {

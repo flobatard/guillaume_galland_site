@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guillaumegalland.com/fr</loc>
+    <loc>https://gallandgroupe.com/fr</loc>
     <lastmod>2026-08-29</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gallandgroupe.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gallandgroupe.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gallandgroupe.com/fr"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://guillaumegalland.com/en</loc>
+    <loc>https://gallandgroupe.com/en</loc>
     <lastmod>2026-08-29</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gallandgroupe.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gallandgroupe.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gallandgroupe.com/fr"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://guillaumegalland.com/fr/mentions-legales</loc>
+    <loc>https://gallandgroupe.com/fr/mentions-legales</loc>
     <lastmod>2026-08-29</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gallandgroupe.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gallandgroupe.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gallandgroupe.com/fr/mentions-legales"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://guillaumegalland.com/en/legal-notice</loc>
+    <loc>https://gallandgroupe.com/en/legal-notice</loc>
     <lastmod>2026-08-29</lastmod>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://guillaumegalland.com/fr/mentions-legales"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://guillaumegalland.com/en/legal-notice"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillaumegalland.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gallandgroupe.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gallandgroupe.com/en/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gallandgroupe.com/fr/mentions-legales"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

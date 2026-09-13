@@ -23,13 +23,13 @@ const fr = {
   about: {
     title: "Une structure indépendante",
     intro: [
-      "Fondée en 2025, Galland Group est une structure indépendante spécialisée dans l’accompagnement des maîtres d’ouvrage sur des projets immobiliers à forts enjeux.",
+      "Fondée en 2025, Galland Groupe est une structure indépendante spécialisée dans l’accompagnement des maîtres d’ouvrage sur des projets immobiliers à forts enjeux.",
       "Nous intervenons en direction de projet et en conseil, avec un noyau permanent et un réseau de consultants, bureaux d’études et partenaires spécialisés mobilisés selon les besoins de chaque opération.",
     ],
     values:
       "Rigueur, exigence, efficacité, qualité des relations humaines et compréhension des usages : c’est le socle de notre engagement.",
     motto: "La qualité par l’exigence.",
-    portraitAlt: "Guillaume Galland, fondateur de Galland Group",
+    portraitAlt: "Guillaume Galland, fondateur de Galland Groupe",
   },
   services: {
     title: "Nos accompagnements",
@@ -85,7 +85,7 @@ const fr = {
       "soutien direct à vos équipes dans vos locaux,",
       "intervention ponctuelle à distance pour le suivi et l’analyse des dossiers.",
     ],
-    mapAlt: "Carte des zones d’intervention de Galland Group en France et en Europe",
+    mapAlt: "Carte des zones d’intervention de Galland Groupe en France et en Europe",
   },
   portfolio: {
     title: "Nos références",
@@ -130,9 +130,9 @@ const fr = {
   },
   legal: {
     seo: {
-      title: "Mentions légales — Galland Group",
+      title: "Mentions légales — Galland Groupe",
       description:
-        "Mentions légales du site guillaumegalland.com : éditeur, hébergement, propriété intellectuelle, données personnelles et cookies.",
+        "Mentions légales du site gallandgroupe.com : éditeur, hébergement, propriété intellectuelle, données personnelles et cookies.",
     },
     title: "Mentions Légales",
     subtitle: "Informations légales et politique de confidentialité",
@@ -219,7 +219,7 @@ const fr = {
   },
   seo: {
     home: {
-      title: "Galland Group, Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise",
+      title: "Galland Groupe, Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise",
       description:
         "Assistant Maître d'Ouvrage et conseil en immobilier d'entreprise. Nous accompagnons les maîtres d'ouvrage sur des projets tertiaires, hôteliers et retail, en France et en Europe, du cadrage à la livraison.",
     },

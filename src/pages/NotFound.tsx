@@ -19,7 +19,7 @@ const NotFound = () => {
       {/* /404 est prérendue, donc atteignable en direct avec un statut 200 :
           sans noindex elle serait indexable. */}
       <Seo
-        title="Page introuvable / Page not found — Galland Group"
+        title="Page introuvable / Page not found — Galland Groupe"
         description="Cette page n’existe pas ou a été déplacée. / This page does not exist or has been moved."
         path="/404"
         noindex
